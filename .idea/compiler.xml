@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="newsapp-common" />
+        <module name="newsapp-model" />
+        <module name="newsapp-apis" />
+        <module name="newsapp-utils" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="newsapp" target="1.8" />
+      <module name="newsapp-apis" target="1.8" />
+      <module name="newsapp-common" target="1.8" />
+      <module name="newsapp-model" target="1.8" />
+      <module name="newsapp-utils" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="newsapp-apis" options="-parameters" />
+      <module name="newsapp-common" options="-parameters" />
+      <module name="newsapp-model" options="-parameters" />
+      <module name="newsapp-utils" options="-parameters" />
+    </option>
+  </component>
+</project>
