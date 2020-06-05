@@ -5,12 +5,12 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
- * 数字ID混淆器，用于前后端数据通信时候的处理
+ * 加密算法，用于保护数据传送的id
  */
 public class IdsUtils {
 
     private static final String KEY_AES = "AES";
-    private static final String KEY_SECART = "12345678901234561234567890123456";
+    private static final String KEY_SECART = "543654343245";
 
     public static String encryptNumber(Long number) throws Exception{
         String src = String.format("%d%013d",0,number);

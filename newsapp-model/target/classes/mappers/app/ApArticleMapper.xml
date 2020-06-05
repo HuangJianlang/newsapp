@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.heima.article.mysql.core.model.mappers.app.ApArticleMapper">
-    <resultMap id="resultMap" type="com.heima.article.mysql.core.model.pojos.app.ApArticle">
+<mapper namespace="com.jianlang.model.mappers.app.ApArticleMapper">
+    <resultMap id="resultMap" type="com.jianlang.model.article.pojos.ApArticle">
         <id column="id" property="id"/>
         <result column="title" property="title"/>
         <result column="author_id" property="authorId"/>
@@ -23,13 +23,13 @@
         <result column="publish_time" property="publishTime"/>
         <result column="sync_status" property="syncStatus"/>
     </resultMap>
-    <resultMap id="resultStatisticMap" type="com.heima.article.mysql.core.model.pojos.statistic.app.ApArticleSDto">
+    <resultMap id="resultStatisticMap" type="com.jianlang.model.article.pojos.ApArticleSDto">
         <result column="author_id" property="authorId"/>
         <result column="count" property="count"/>
     </resultMap>
     <sql id="Base_Column_List">
     id, title, author_id, author_name, channel_id, channel_name, layout, flag, images,
-    labels, likes, collection, comment, views, province_id, city_id, county_id, created_time, 
+    labels, likes, collection, comment, views, province_id, city_id, county_id, created_time,
     publish_time,sync_status
   </sql>
 
@@ -141,7 +141,7 @@
         where author_id = #{apAuthorId}
     </select>
 
-    <insert id="insert" parameterType="com.heima.article.mysql.core.model.pojos.app.ApArticle">
+    <insert id="insert" parameterType="com.jianlang.model.article.pojos.ApArticle">
         <selectKey resultType="java.lang.Integer" order="AFTER" keyColumn="id" keyProperty="id">
             select last_insert_id()
         </selectKey>

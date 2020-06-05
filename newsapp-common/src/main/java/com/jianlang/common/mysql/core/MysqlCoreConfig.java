@@ -16,82 +16,67 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import javax.sql.DataSource;
 import java.io.IOException;
 
-/**
- * 自动化配置核心数据库的连接配置
- */
-@Setter
 @Getter
+@Setter
 @Configuration
 @ConfigurationProperties(prefix = "mysql.core")
 @PropertySource("classpath:mysql-core-jdbc.properties")
-@MapperScan(basePackages = "com.heima.model.mappers", sqlSessionFactoryRef = "mysqlCoreSqlSessionFactory")
+@MapperScan(basePackages="com.jianlang.model.mappers", sqlSessionFactoryRef = "mysqlCoreSessionFactory")
 public class MysqlCoreConfig {
+
     String jdbcUrl;
     String jdbcUserName;
     String jdbcPassword;
     String jdbcDriver;
-    String rootMapper;//mapper文件在classpath下存放的根路径
-    String aliasesPackage;//别名包
-    String helperDialect = "mysql";// 分页语言
-    Boolean helperReasonable = false;//分页合理化
-    Boolean supportMethodsArguments = false;//自动根据上面 params 配置的字段中取值
-    String params;//pageNum,pageSize,count,pageSizeZero,reasonable，不配置映射的用默认值， 默认值为pageNum=pageNum;pageSize=pageSize;count=countSql;reasonable=reasonable;pageSizeZero=pageSizeZero
-
+    String rootMapper;
+    //别包名
+    String aliasesPackage;
     /**
-     * 这是最快的数据库连接池
-     *
-     * @return
+     * 数据库连接池
      */
-    @Bean
-    public DataSource mysqlCoreDataSource() {
-        HikariDataSource hikariDataSource = new HikariDataSource();
-        hikariDataSource.setUsername(this.getJdbcUserName());
-        hikariDataSource.setPassword(this.getRealPassword());
-        hikariDataSource.setJdbcUrl(this.getJdbcUrl());
-        //最大连接数
-        hikariDataSource.setMaximumPoolSize(50);
-        //最小连接数
-        hikariDataSource.setMinimumIdle(5);
-        hikariDataSource.setDriverClassName(this.getJdbcDriver());
-        return hikariDataSource;
+    @Bean("mysqlCoreDataSource")
+    public DataSource mysqlCoreDataSource(){
+        HikariDataSource dataSource = new HikariDataSource();
+        //获取配置文件中的username
+        dataSource.setJdbcUrl(this.getJdbcUrl());
+        dataSource.setDriverClassName(this.getJdbcDriver());
+        dataSource.setUsername(this.getJdbcUserName());
+        dataSource.setPassword(this.getJdbcPassword());
+
+        dataSource.setMaximumPoolSize(50);
+        dataSource.setMinimumIdle(5);
+
+        return dataSource;
     }
 
     /**
-     * 这是Mybatis的Session
-     *
-     * @return
-     * @throws IOException
+     * Mybaits
      */
-    @Bean
-    public SqlSessionFactoryBean mysqlCoreSqlSessionFactory(@Qualifier("mysqlCoreDataSource") DataSource mysqlCoreDataSource) throws IOException {
+    //注入
+    @Bean("mysqlCoreSessionFactory")
+    public SqlSessionFactoryBean mysqlCoreSessionFactory(@Qualifier("mysqlCoreDataSource") DataSource dataSource) throws IOException {
+        SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
+        //data source
+        factoryBean.setDataSource(dataSource);
+        //别名
+        factoryBean.setTypeAliasesPackage(this.getAliasesPackage());
+        //mapper相关
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
-        sessionFactory.setDataSource(mysqlCoreDataSource);
-        sessionFactory.setMapperLocations(resolver.getResources(this.getMapperFilePath()));
-        sessionFactory.setTypeAliasesPackage(this.getAliasesPackage());
-        org.apache.ibatis.session.Configuration mybatisConf = new org.apache.ibatis.session.Configuration();
-        mybatisConf.setMapUnderscoreToCamelCase(true);
-        sessionFactory.setConfiguration(mybatisConf);
-        return sessionFactory;
+        factoryBean.setMapperLocations(resolver.getResources(this.getMapperFile()));
+
+        //xxx_yyy -> xxxYyy
+        org.apache.ibatis.session.Configuration configuration = new org.apache.ibatis.session.Configuration();
+        configuration.setMapUnderscoreToCamelCase(true);
+        factoryBean.setConfiguration(configuration);
+        return factoryBean;
     }
 
-    /**
-     * 密码反转，简单示意密码在配置文件中的加密处理
-     *
-     * @return
-     */
-    public String getRealPassword() {
-        return StringUtils.reverse(this.getJdbcPassword());
+    public String getRealPassword(){
+        String password = StringUtils.reverse(this.getJdbcPassword());
+        return password;
     }
 
-    /**
-     * 拼接Mapper.xml文件的存放路径
-     *
-     * @return
-     */
-    public String getMapperFilePath() {
-        return new StringBuffer().append("classpath:").append(this.getRootMapper()).append("/**/*.xml").toString();
+    public String  getMapperFile(){
+        return new StringBuffer("classpath:").append(this.getRootMapper()).append("/**/*.xml").toString();
     }
-
-
 }

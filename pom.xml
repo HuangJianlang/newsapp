@@ -13,6 +13,7 @@
         <module>newsapp-utils</module>
         <module>newsapp-apis</module>
         <module>newsapp-model</module>
+        <module>newsapp-article</module>
     </modules>
 
     <!-- 继承Spring boot工程 -->

@@ -1,5 +1,6 @@
 package com.jianlang.model.common.dtos;
 
+//分页时才需要用，方便前端处理
 public class PageResponseResult extends ResponseResult {
     private Integer currentPage;
     private Integer size;

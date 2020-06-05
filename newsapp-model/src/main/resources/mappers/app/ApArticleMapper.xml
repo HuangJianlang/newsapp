@@ -29,7 +29,7 @@
     </resultMap>
     <sql id="Base_Column_List">
     id, title, author_id, author_name, channel_id, channel_name, layout, flag, images,
-    labels, likes, collection, comment, views, province_id, city_id, county_id, created_time, 
+    labels, likes, collection, comment, views, province_id, city_id, county_id, created_time,
     publish_time,sync_status
   </sql>
 
