@@ -7,12 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="newsapp-article" />
         <module name="newsapp-model" />
         <module name="newsapp-utils" />
-        <module name="newsapp-behavior" />
-        <module name="newsapp-common" />
+        <module name="newsapp-login" />
         <module name="newsapp-apis" />
+        <module name="newsapp-behavior" />
+        <module name="newsapp-article" />
+        <module name="newsapp-user" />
+        <module name="newsapp-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,7 +23,9 @@
       <module name="newsapp-article" target="1.8" />
       <module name="newsapp-behavior" target="1.8" />
       <module name="newsapp-common" target="1.8" />
+      <module name="newsapp-login" target="1.8" />
       <module name="newsapp-model" target="1.8" />
+      <module name="newsapp-user" target="1.8" />
       <module name="newsapp-utils" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -31,7 +35,9 @@
       <module name="newsapp-article" options="-parameters" />
       <module name="newsapp-behavior" options="-parameters" />
       <module name="newsapp-common" options="-parameters" />
+      <module name="newsapp-login" options="-parameters" />
       <module name="newsapp-model" options="-parameters" />
+      <module name="newsapp-user" options="-parameters" />
       <module name="newsapp-utils" options="-parameters" />
     </option>
   </component>

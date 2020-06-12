@@ -6,7 +6,13 @@ import com.jianlang.model.media.pojos.WmUser;
 import io.jsonwebtoken.*;
 
 import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.SecretKeySpec;
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+import java.security.spec.InvalidKeySpecException;
+import java.security.spec.KeySpec;
 import java.util.*;
 
 public class AppJwtUtil {
@@ -14,7 +20,8 @@ public class AppJwtUtil {
     // TOKEN的有效期一天（S）
     private static final int TOKEN_TIME_OUT = 3_600;
     // 加密KEY
-    private static final String TOKEN_ENCRY_KEY = "MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjYyN2I0ZjY";
+    //private static final String TOKEN_ENCRY_KEY = "MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjYyN2I0ZjY";
+    private static final String TOKEN_ENCRY_KEY = "MDk4ZjZiY2Q0NjIxZDM3M2N";
     // 最小刷新间隔(S)
     private static final int REFRESH_TIME = 300;
 
@@ -133,7 +140,7 @@ public class AppJwtUtil {
      *
      * @return
      */
-    public static SecretKey generalKey() {
+    public static SecretKey generalKey(){
         byte[] encodedKey = Base64.getEncoder().encode(TOKEN_ENCRY_KEY.getBytes());
         SecretKey key = new SecretKeySpec(encodedKey, 0, encodedKey.length, "AES");
         return key;

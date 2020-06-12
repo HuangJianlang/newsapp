@@ -10,7 +10,7 @@ import javax.crypto.spec.SecretKeySpec;
 public class IdsUtils {
 
     private static final String KEY_AES = "AES";
-    private static final String KEY_SECART = "543654343245";
+    private static final String KEY_SECART = "5436543432454546";
 
     public static String encryptNumber(Long number) throws Exception{
         String src = String.format("%d%013d",0,number);

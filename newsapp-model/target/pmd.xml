@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.6.1" timestamp="2020-06-06T22:26:10.828">
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/dtos/AuthDto.java">
+<violation beginline="6" endline="9" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.dtos" class="AuthDto" priority="3">
+【AuthDto】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/dtos/AuthListDto.java">
+<violation beginline="6" endline="13" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.dtos" class="AuthListDto" priority="3">
+【AuthListDto】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/dtos/CommonDto.java">
+<violation beginline="9" endline="22" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.dtos" class="CommonDto" priority="3">
+【CommonDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="13" endline="13" begincolumn="13" endcolumn="25" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.dtos" class="CommonDto" variable="model" priority="3">
+字段【model】必须使用javadoc形式的注释
+</violation>
+<violation beginline="15" endline="15" begincolumn="13" endcolumn="33" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.dtos" class="CommonDto" variable="name" priority="3">
+字段【name】必须使用javadoc形式的注释
+</violation>
+<violation beginline="17" endline="17" begincolumn="13" endcolumn="39" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.dtos" class="CommonDto" variable="where" priority="3">
+字段【where】必须使用javadoc形式的注释
+</violation>
+<violation beginline="19" endline="19" begincolumn="13" endcolumn="38" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.dtos" class="CommonDto" variable="sets" priority="3">
+字段【sets】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/dtos/CommonWhereDto.java">
+<violation beginline="6" endline="12" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.dtos" class="CommonWhereDto" priority="3">
+【CommonWhereDto】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/enums/CommonTableEnum.java">
+<violation beginline="6" endline="27" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.enums" class="CommonTableEnum" priority="3">
+【CommonTableEnum】缺少包含@author的注释信息
+</violation>
+<violation beginline="6" endline="27" begincolumn="29" endcolumn="1" rule="EnumConstantsMustHaveCommentRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.enums" class="CommonTableEnum" priority="2">
+枚举【CommonTableEnum】的字段缺少注释信息
+</violation>
+<violation beginline="15" endline="15" begincolumn="5" endcolumn="17" rule="AvoidCommentBehindStatementRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.enums" class="CommonTableEnum" variable="list" priority="3">
+请不要使用行尾注释
+</violation>
+<violation beginline="16" endline="16" begincolumn="5" endcolumn="16" rule="AvoidCommentBehindStatementRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.enums" class="CommonTableEnum" variable="add" priority="3">
+请不要使用行尾注释
+</violation>
+<violation beginline="17" endline="17" begincolumn="5" endcolumn="19" rule="AvoidCommentBehindStatementRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.enums" class="CommonTableEnum" variable="update" priority="3">
+请不要使用行尾注释
+</violation>
+<violation beginline="18" endline="18" begincolumn="5" endcolumn="19" rule="AvoidCommentBehindStatementRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.enums" class="CommonTableEnum" variable="delete" priority="3">
+请不要使用行尾注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdArticleStatistics.java">
+<violation beginline="10" endline="29" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdArticleStatistics" priority="3">
+【AdArticleStatistics】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdChannel.java">
+<violation beginline="9" endline="19" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdChannel" priority="3">
+【AdChannel】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdChannelLabel.java">
+<violation beginline="6" endline="11" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdChannelLabel" priority="3">
+【AdChannelLabel】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdFunction.java">
+<violation beginline="8" endline="15" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdFunction" priority="3">
+【AdFunction】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdLabel.java">
+<violation beginline="8" endline="14" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdLabel" priority="3">
+【AdLabel】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdMenu.java">
+<violation beginline="8" endline="15" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdMenu" priority="3">
+【AdMenu】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdRecommendStrategy.java">
+<violation beginline="8" endline="16" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdRecommendStrategy" priority="3">
+【AdRecommendStrategy】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdRole.java">
+<violation beginline="8" endline="15" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdRole" priority="3">
+【AdRole】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdRoleAuth.java">
+<violation beginline="8" endline="16" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdRoleAuth" priority="3">
+【AdRoleAuth】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdSensitive.java">
+<violation beginline="7" endline="12" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdSensitive" priority="3">
+【AdSensitive】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdStrategyGroup.java">
+<violation beginline="8" endline="14" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdStrategyGroup" priority="3">
+【AdStrategyGroup】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdUser.java">
+<violation beginline="8" endline="21" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdUser" priority="3">
+【AdUser】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdUserEquipment.java">
+<violation beginline="8" endline="17" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdUserEquipment" priority="3">
+【AdUserEquipment】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdUserLogin.java">
+<violation beginline="9" endline="19" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdUserLogin" priority="3">
+【AdUserLogin】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdUserOpertion.java">
+<violation beginline="8" endline="18" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdUserOpertion" priority="3">
+【AdUserOpertion】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdUserRole.java">
+<violation beginline="8" endline="14" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdUserRole" priority="3">
+【AdUserRole】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/admin/pojos/AdVistorStatistics.java">
+<violation beginline="8" endline="16" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.admin.pojos" class="AdVistorStatistics" priority="3">
+【AdVistorStatistics】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/dtos/ArticleHomeDto.java">
+<violation beginline="8" endline="25" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="ArticleHomeDto" priority="3">
+【ArticleHomeDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="10" endline="10" begincolumn="5" endcolumn="23" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="ArticleHomeDto" variable="provinceId" priority="3">
+字段【provinceId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="12" endline="12" begincolumn="5" endcolumn="19" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="ArticleHomeDto" variable="cityId" priority="3">
+字段【cityId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="14" endline="14" begincolumn="5" endcolumn="21" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="ArticleHomeDto" variable="countyId" priority="3">
+字段【countyId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="16" endline="16" begincolumn="5" endcolumn="22" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="ArticleHomeDto" variable="maxBehotTime" priority="3">
+字段【maxBehotTime】必须使用javadoc形式的注释
+</violation>
+<violation beginline="18" endline="18" begincolumn="5" endcolumn="22" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="ArticleHomeDto" variable="minBehotTime" priority="3">
+字段【minBehotTime】必须使用javadoc形式的注释
+</violation>
+<violation beginline="20" endline="20" begincolumn="5" endcolumn="17" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="ArticleHomeDto" variable="size" priority="3">
+字段【size】必须使用javadoc形式的注释
+</violation>
+<violation beginline="22" endline="22" begincolumn="5" endcolumn="15" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="ArticleHomeDto" variable="tag" priority="3">
+字段【tag】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/dtos/ArticleInfoDto.java">
+<violation beginline="7" endline="19" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="ArticleInfoDto" priority="3">
+【ArticleInfoDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="9" endline="9" begincolumn="5" endcolumn="24" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="ArticleInfoDto" variable="equipmentId" priority="3">
+字段【equipmentId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="12" endline="12" begincolumn="5" endcolumn="22" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="ArticleInfoDto" variable="articleId" priority="3">
+字段【articleId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="15" endline="15" begincolumn="5" endcolumn="21" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="ArticleInfoDto" variable="authorId" priority="3">
+字段【authorId】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/dtos/EsWrapperDto.java">
+<violation beginline="6" endline="11" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="EsWrapperDto" priority="3">
+【EsWrapperDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="7" endline="7" begincolumn="13" endcolumn="23" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="EsWrapperDto" variable="id" priority="3">
+字段【id】必须使用javadoc形式的注释
+</violation>
+<violation beginline="9" endline="9" begincolumn="13" endcolumn="23" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="EsWrapperDto" variable="tag" priority="3">
+字段【tag】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/dtos/UserSearchDto.java">
+<violation beginline="10" endline="28" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="UserSearchDto" priority="3">
+【UserSearchDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="12" endline="12" begincolumn="5" endcolumn="24" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="UserSearchDto" variable="equipmentId" priority="3">
+字段【equipmentId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="16" endline="16" begincolumn="5" endcolumn="15" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.dtos" class="UserSearchDto" variable="tag" priority="3">
+字段【tag】必须使用javadoc形式的注释
+</violation>
+<violation beginline="24" endline="24" begincolumn="9" endcolumn="35" rule="NeedBraceRule" ruleset="AlibabaJavaFlowControl" package="com.jianlang.model.article.dtos" class="UserSearchDto" method="getFromIndex" priority="1">
+if语句缺少大括号
+</violation>
+<violation beginline="25" endline="25" begincolumn="9" endcolumn="47" rule="NeedBraceRule" ruleset="AlibabaJavaFlowControl" package="com.jianlang.model.article.dtos" class="UserSearchDto" method="getFromIndex" priority="1">
+if语句缺少大括号
+</violation>
+<violation beginline="25" endline="25" begincolumn="45" endcolumn="46" rule="UndefineMagicConstantRule" ruleset="AlibabaJavaConstants" package="com.jianlang.model.article.dtos" class="UserSearchDto" method="getFromIndex" priority="3">
+魔法值【10】
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/pojos/ApArticle.java">
+<violation beginline="11" endline="37" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApArticle" priority="3">
+【ApArticle】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/pojos/ApArticleConfig.java">
+<violation beginline="7" endline="17" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApArticleConfig" priority="3">
+【ApArticleConfig】缺少包含@author的注释信息
+</violation>
+<violation beginline="10" endline="10" begincolumn="13" endcolumn="30" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApArticleConfig" variable="articleId" priority="3">
+字段【articleId】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/pojos/ApArticleContent.java">
+<violation beginline="7" endline="14" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApArticleContent" priority="3">
+【ApArticleContent】缺少包含@author的注释信息
+</violation>
+<violation beginline="9" endline="9" begincolumn="13" endcolumn="30" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApArticleContent" variable="articleId" priority="3">
+字段【articleId】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/pojos/ApArticleSDto.java">
+<violation beginline="6" endline="9" begincolumn="8" endcolumn="1" rule="ClassNamingShouldBeCamelRule" ruleset="AlibabaJavaNaming" package="com.jianlang.model.article.pojos" class="ApArticleSDto" priority="3">
+【ApArticleSDto】不符合UpperCamelCase命名风格
+</violation>
+<violation beginline="6" endline="9" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApArticleSDto" priority="3">
+【ApArticleSDto】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/pojos/ApAssociateWords.java">
+<violation beginline="8" endline="12" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApAssociateWords" priority="3">
+【ApAssociateWords】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/pojos/ApAuthor.java">
+<violation beginline="9" endline="19" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApAuthor" priority="3">
+【ApAuthor】缺少包含@author的注释信息
+</violation>
+<violation beginline="13" endline="13" begincolumn="13" endcolumn="24" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApAuthor" variable="userId" priority="3">
+字段【userId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="15" endline="15" begincolumn="13" endcolumn="26" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApAuthor" variable="wmUserId" priority="3">
+字段【wmUserId】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/pojos/ApCollection.java">
+<violation beginline="11" endline="38" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApCollection" priority="3">
+【ApCollection】缺少包含@author的注释信息
+</violation>
+<violation beginline="22" endline="22" begincolumn="12" endcolumn="5" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApCollection" priority="3">
+枚举【Type】必须使用javadoc形式的注释
+</violation>
+<violation beginline="24" endline="33" begincolumn="21" endcolumn="5" rule="EnumConstantsMustHaveCommentRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApCollection" priority="2">
+枚举【Type】的字段缺少注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/pojos/ApComment.java">
+<violation beginline="9" endline="29" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApComment" priority="3">
+【ApComment】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/pojos/ApCommentRepay.java">
+<violation beginline="9" endline="22" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApCommentRepay" priority="3">
+【ApCommentRepay】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/pojos/ApDynamic.java">
+<violation beginline="7" endline="24" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApDynamic" priority="3">
+【ApDynamic】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/pojos/ApEquipment.java">
+<violation beginline="7" endline="15" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApEquipment" priority="3">
+【ApEquipment】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/pojos/ApEquipmentCode.java">
+<violation beginline="6" endline="11" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApEquipmentCode" priority="3">
+【ApEquipmentCode】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/pojos/ApHotArticles.java">
+<violation beginline="8" endline="17" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApHotArticles" priority="3">
+【ApHotArticles】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/article/pojos/ApHotWords.java">
+<violation beginline="9" endline="15" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.article.pojos" class="ApHotWords" priority="3">
+【ApHotWords】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/dtos/CollectionBehaviorDto.java">
+<violation beginline="9" endline="32" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="CollectionBehaviorDto" priority="3">
+【CollectionBehaviorDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="10" endline="10" begincolumn="5" endcolumn="24" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="CollectionBehaviorDto" variable="equipmentId" priority="3">
+字段【equipmentId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="13" endline="13" begincolumn="5" endcolumn="20" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="CollectionBehaviorDto" variable="entryId" priority="3">
+字段【entryId】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/dtos/FollowBehaviorDto.java">
+<violation beginline="7" endline="16" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="FollowBehaviorDto" priority="3">
+【FollowBehaviorDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="8" endline="8" begincolumn="5" endcolumn="24" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="FollowBehaviorDto" variable="equipmentId" priority="3">
+字段【equipmentId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="11" endline="11" begincolumn="5" endcolumn="22" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="FollowBehaviorDto" variable="articleId" priority="3">
+字段【articleId】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/dtos/ForwardBehaviorDto.java">
+<violation beginline="7" endline="16" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="ForwardBehaviorDto" priority="3">
+【ForwardBehaviorDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="8" endline="8" begincolumn="5" endcolumn="24" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="ForwardBehaviorDto" variable="equipmentId" priority="3">
+字段【equipmentId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="11" endline="11" begincolumn="5" endcolumn="22" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="ForwardBehaviorDto" variable="articleId" priority="3">
+字段【articleId】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/dtos/LikesBehaviorDto.java">
+<violation beginline="7" endline="29" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="LikesBehaviorDto" priority="3">
+【LikesBehaviorDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="8" endline="8" begincolumn="5" endcolumn="24" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="LikesBehaviorDto" variable="equipmentId" priority="3">
+字段【equipmentId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="11" endline="11" begincolumn="5" endcolumn="20" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="LikesBehaviorDto" variable="entryId" priority="3">
+字段【entryId】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/dtos/ReadBehaviorDto.java">
+<violation beginline="7" endline="35" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="ReadBehaviorDto" priority="3">
+【ReadBehaviorDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="8" endline="8" begincolumn="5" endcolumn="24" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="ReadBehaviorDto" variable="equipmentId" priority="3">
+字段【equipmentId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="11" endline="11" begincolumn="5" endcolumn="22" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="ReadBehaviorDto" variable="articleId" priority="3">
+字段【articleId】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/dtos/ShareBehaviorDto.java">
+<violation beginline="7" endline="25" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="ShareBehaviorDto" priority="3">
+【ShareBehaviorDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="8" endline="8" begincolumn="5" endcolumn="24" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="ShareBehaviorDto" variable="equipmentId" priority="3">
+字段【equipmentId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="11" endline="11" begincolumn="5" endcolumn="22" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="ShareBehaviorDto" variable="articleId" priority="3">
+字段【articleId】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/dtos/ShowBehaviorDto.java">
+<violation beginline="11" endline="18" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="ShowBehaviorDto" priority="3">
+【ShowBehaviorDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="13" endline="13" begincolumn="5" endcolumn="24" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="ShowBehaviorDto" variable="equipmentId" priority="3">
+字段【equipmentId】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/dtos/UnLikesBehaviorDto.java">
+<violation beginline="7" endline="22" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="UnLikesBehaviorDto" priority="3">
+【UnLikesBehaviorDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="8" endline="8" begincolumn="5" endcolumn="24" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="UnLikesBehaviorDto" variable="equipmentId" priority="3">
+字段【equipmentId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="11" endline="11" begincolumn="5" endcolumn="22" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.dtos" class="UnLikesBehaviorDto" variable="articleId" priority="3">
+字段【articleId】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/pojos/ApBehaviorEntry.java">
+<violation beginline="10" endline="33" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApBehaviorEntry" priority="3">
+【ApBehaviorEntry】缺少包含@author的注释信息
+</violation>
+<violation beginline="18" endline="25" begincolumn="22" endcolumn="5" rule="EnumConstantsMustHaveCommentRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApBehaviorEntry" priority="2">
+枚举【Type】的字段缺少注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/pojos/ApFollowBehavior.java">
+<violation beginline="8" endline="14" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApFollowBehavior" priority="3">
+【ApFollowBehavior】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/pojos/ApForwardBehavior.java">
+<violation beginline="9" endline="16" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApForwardBehavior" priority="3">
+【ApForwardBehavior】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/pojos/ApLikesBehavior.java">
+<violation beginline="11" endline="47" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApLikesBehavior" priority="3">
+【ApLikesBehavior】缺少包含@author的注释信息
+</violation>
+<violation beginline="22" endline="22" begincolumn="12" endcolumn="5" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApLikesBehavior" priority="3">
+枚举【Type】必须使用javadoc形式的注释
+</violation>
+<violation beginline="24" endline="33" begincolumn="21" endcolumn="5" rule="EnumConstantsMustHaveCommentRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApLikesBehavior" priority="2">
+枚举【Type】的字段缺少注释信息
+</violation>
+<violation beginline="34" endline="34" begincolumn="12" endcolumn="5" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApLikesBehavior" priority="3">
+枚举【Operation】必须使用javadoc形式的注释
+</violation>
+<violation beginline="36" endline="45" begincolumn="26" endcolumn="5" rule="EnumConstantsMustHaveCommentRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApLikesBehavior" priority="2">
+枚举【Operation】的字段缺少注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/pojos/ApLoginBehavior.java">
+<violation beginline="8" endline="17" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApLoginBehavior" priority="3">
+【ApLoginBehavior】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/pojos/ApReadBehavior.java">
+<violation beginline="10" endline="24" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApReadBehavior" priority="3">
+【ApReadBehavior】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/pojos/ApShareBehavior.java">
+<violation beginline="9" endline="17" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApShareBehavior" priority="3">
+【ApShareBehavior】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/pojos/ApShowBehavior.java">
+<violation beginline="9" endline="17" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApShowBehavior" priority="3">
+【ApShowBehavior】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/behavior/pojos/ApUnlikesBehavior.java">
+<violation beginline="10" endline="30" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApUnlikesBehavior" priority="3">
+【ApUnlikesBehavior】缺少包含@author的注释信息
+</violation>
+<violation beginline="18" endline="18" begincolumn="12" endcolumn="5" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApUnlikesBehavior" priority="3">
+枚举【Type】必须使用javadoc形式的注释
+</violation>
+<violation beginline="20" endline="29" begincolumn="21" endcolumn="5" rule="EnumConstantsMustHaveCommentRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.behavior.pojos" class="ApUnlikesBehavior" priority="2">
+枚举【Type】的字段缺少注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/common/constants/ESIndexConstants.java">
+<violation beginline="3" endline="9" begincolumn="8" endcolumn="1" rule="ClassNamingShouldBeCamelRule" ruleset="AlibabaJavaNaming" package="com.jianlang.model.common.constants" class="ESIndexConstants" priority="3">
+【ESIndexConstants】不符合UpperCamelCase命名风格
+</violation>
+<violation beginline="3" endline="9" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.common.constants" class="ESIndexConstants" priority="3">
+【ESIndexConstants】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/common/dtos/PageRequestDto.java">
+<violation beginline="8" endline="21" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.common.dtos" class="PageRequestDto" priority="3">
+【PageRequestDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="17" endline="17" begincolumn="63" endcolumn="65" rule="UndefineMagicConstantRule" ruleset="AlibabaJavaConstants" package="com.jianlang.model.common.dtos" class="PageRequestDto" method="checkParam" priority="3">
+魔法值【100】
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/common/dtos/PageResponseResult.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="1" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.common.dtos" class="PageResponseResult" priority="3">
+类【PageResponseResult】必须使用javadoc形式的注释
+</violation>
+<violation beginline="4" endline="38" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.common.dtos" class="PageResponseResult" priority="3">
+【PageResponseResult】注释缺少@author信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/common/dtos/ResponseResult.java">
+<violation beginline="11" endline="130" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.common.dtos" class="ResponseResult" priority="3">
+【ResponseResult】注释缺少@author信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/common/enums/AppHttpCodeEnum.java">
+<violation beginline="3" endline="44" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.common.enums" class="AppHttpCodeEnum" priority="3">
+【AppHttpCodeEnum】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/callback/ConcurrentCallBack.java">
+<violation beginline="3" endline="6" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.callback" class="ConcurrentCallBack" priority="3">
+【ConcurrentCallBack】缺少包含@author的注释信息
+</violation>
+<violation beginline="5" endline="5" begincolumn="20" endcolumn="27" rule="AbstractMethodOrInterfaceMethodMustUseJavadocRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.callback" class="ConcurrentCallBack" method="filter" priority="3">
+接口方法【filter】必须使用javadoc注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/callback/CookieCallBack.java">
+<violation beginline="6" endline="15" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.callback" class="CookieCallBack" priority="3">
+【CookieCallBack】缺少包含@author的注释信息
+</violation>
+<violation beginline="12" endline="12" begincolumn="26" endcolumn="52" rule="AbstractMethodOrInterfaceMethodMustUseJavadocRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.callback" class="CookieCallBack" method="getCookieEntity" priority="3">
+方法【getCookieEntity】的参数【url】缺少javadoc注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/callback/DataValidateCallBack.java">
+<violation beginline="6" endline="9" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.callback" class="DataValidateCallBack" priority="3">
+【DataValidateCallBack】注释缺少@author信息
+</violation>
+<violation beginline="8" endline="8" begincolumn="20" endcolumn="43" rule="AbstractMethodOrInterfaceMethodMustUseJavadocRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.callback" class="DataValidateCallBack" method="validate" priority="3">
+接口方法【validate】必须使用javadoc注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/callback/DelayedCallBack.java">
+<violation beginline="4" endline="34" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.callback" class="DelayedCallBack" priority="3">
+【DelayedCallBack】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/callback/ProxyProviderCallBack.java">
+<violation beginline="10" endline="12" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.callback" class="ProxyProviderCallBack" priority="3">
+【ProxyProviderCallBack】注释缺少@author信息
+</violation>
+<violation beginline="11" endline="11" begincolumn="31" endcolumn="44" rule="AbstractMethodOrInterfaceMethodMustUseJavadocRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.callback" class="ProxyProviderCallBack" method="getProxyList" priority="3">
+接口方法【getProxyList】必须使用javadoc注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/cookie/CrawlerCookie.java">
+<violation beginline="5" endline="112" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.cookie" class="CrawlerCookie" priority="3">
+【CrawlerCookie】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/cookie/CrawlerHtml.java">
+<violation beginline="5" endline="29" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.cookie" class="CrawlerHtml" priority="3">
+【CrawlerHtml】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/delayed/DelayedUtils.java">
+<violation beginline="6" endline="130" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.delayed" class="DelayedUtils" priority="3">
+【DelayedUtils】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/label/HtmlLabel.java">
+<violation beginline="5" endline="47" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.label" class="HtmlLabel" priority="3">
+【HtmlLabel】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/label/HtmlStyle.java">
+<violation beginline="8" endline="34" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.label" class="HtmlStyle" priority="3">
+【HtmlStyle】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/parse/ParseItem.java">
+<violation beginline="10" endline="52" begincolumn="17" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.parse" class="ParseItem" priority="3">
+【ParseItem】注释缺少@author信息
+</violation>
+<violation beginline="10" endline="52" begincolumn="17" endcolumn="1" rule="AbstractClassShouldStartWithAbstractNamingRule" ruleset="AlibabaJavaNaming" package="com.jianlang.model.crawler.core.parse" class="ParseItem" priority="2">
+抽象类【ParseItem】命名应以Abstract或Base开头
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/parse/ParseRule.java">
+<violation beginline="10" endline="116" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.parse" class="ParseRule" priority="3">
+【ParseRule】注释缺少@author信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/parse/ZipUtils.java">
+<violation beginline="12" endline="198" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.parse" class="ZipUtils" priority="3">
+【ZipUtils】注释缺少@author信息
+</violation>
+<violation beginline="112" endline="113" begincolumn="9" endcolumn="24" rule="NeedBraceRule" ruleset="AlibabaJavaFlowControl" package="com.jianlang.model.crawler.core.parse" class="ZipUtils" method="zip" priority="1">
+if语句缺少大括号
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/parse/impl/CrawlerParseItem.java">
+<violation beginline="5" endline="234" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.parse.impl" class="CrawlerParseItem" priority="3">
+【CrawlerParseItem】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/proxy/CrawlerProxy.java">
+<violation beginline="8" endline="55" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.proxy" class="CrawlerProxy" priority="3">
+【CrawlerProxy】注释缺少@author信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/proxy/CrawlerProxyProvider.java">
+<violation beginline="14" endline="108" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.proxy" class="CrawlerProxyProvider" priority="3">
+【CrawlerProxyProvider】注释缺少@author信息
+</violation>
+<violation beginline="22" endline="22" begincolumn="13" endcolumn="44" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.proxy" class="CrawlerProxyProvider" variable="readLock" priority="3">
+字段【readLock】必须使用javadoc形式的注释
+</violation>
+<violation beginline="24" endline="24" begincolumn="13" endcolumn="46" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.proxy" class="CrawlerProxyProvider" variable="writeLock" priority="3">
+字段【writeLock】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/proxy/ProxyValidate.java">
+<violation beginline="6" endline="98" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.proxy" class="ProxyValidate" priority="3">
+【ProxyValidate】注释缺少@author信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/core/request/RequestData.java">
+<violation beginline="8" endline="70" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.core.request" class="RequestData" priority="3">
+【RequestData】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/enums/CrawlerEnum.java">
+<violation beginline="3" endline="74" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.enums" class="CrawlerEnum" priority="3">
+【CrawlerEnum】缺少包含@author的注释信息
+</violation>
+<violation beginline="9" endline="11" begincolumn="28" endcolumn="5" rule="EnumConstantsMustHaveCommentRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.enums" class="CrawlerEnum" priority="2">
+枚举【HandelType】的字段缺少注释信息
+</violation>
+<violation beginline="16" endline="18" begincolumn="31" endcolumn="5" rule="EnumConstantsMustHaveCommentRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.enums" class="CrawlerEnum" priority="2">
+枚举【ParseRuleType】的字段缺少注释信息
+</violation>
+<violation beginline="23" endline="25" begincolumn="32" endcolumn="5" rule="EnumConstantsMustHaveCommentRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.enums" class="CrawlerEnum" priority="2">
+枚举【ReturnDataType】的字段缺少注释信息
+</violation>
+<violation beginline="31" endline="33" begincolumn="31" endcolumn="5" rule="EnumConstantsMustHaveCommentRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.enums" class="CrawlerEnum" priority="2">
+枚举【ComponentType】的字段缺少注释信息
+</violation>
+<violation beginline="35" endline="71" begincolumn="26" endcolumn="5" rule="EnumConstantsMustHaveCommentRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.enums" class="CrawlerEnum" priority="2">
+枚举【HtmlType】的字段缺少注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/pojos/ClIpPool.java">
+<violation beginline="7" endline="45" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.pojos" class="ClIpPool" priority="3">
+【ClIpPool】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/pojos/ClMaterial.java">
+<violation beginline="11" endline="19" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.pojos" class="ClMaterial" priority="3">
+【ClMaterial】注释缺少@author信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/pojos/ClNews.java">
+<violation beginline="11" endline="163" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.pojos" class="ClNews" priority="3">
+【ClNews】注释缺少@author信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/pojos/ClNewsAdditional.java">
+<violation beginline="11" endline="26" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.pojos" class="ClNewsAdditional" priority="3">
+【ClNewsAdditional】注释缺少@author信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/pojos/ClNewsComment.java">
+<violation beginline="12" endline="43" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.pojos" class="ClNewsComment" priority="3">
+【ClNewsComment】注释缺少@author信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/pojos/ClNewsMaterial.java">
+<violation beginline="9" endline="16" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.pojos" class="ClNewsMaterial" priority="3">
+【ClNewsMaterial】注释缺少@author信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/pojos/ClTask.java">
+<violation beginline="7" endline="31" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.pojos" class="ClTask" priority="3">
+【ClTask】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/pojos/ClTaskException.java">
+<violation beginline="7" endline="16" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.pojos" class="ClTaskException" priority="3">
+【ClTaskException】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/crawler/pojos/ClTaskLog.java">
+<violation beginline="7" endline="16" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.crawler.pojos" class="ClTaskLog" priority="3">
+【ClTaskLog】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/mappers/app/ApArticleMapper.java">
+<violation beginline="10" endline="14" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mappers.app" class="ApArticleMapper" priority="3">
+【ApArticleMapper】缺少包含@author的注释信息
+</violation>
+<violation beginline="11" endline="11" begincolumn="21" endcolumn="87" rule="AbstractMethodOrInterfaceMethodMustUseJavadocRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mappers.app" class="ApArticleMapper" method="loadArticleListByIdList" priority="3">
+接口方法【loadArticleListByIdList】必须使用javadoc注释
+</violation>
+<violation beginline="13" endline="13" begincolumn="21" endcolumn="110" rule="AbstractMethodOrInterfaceMethodMustUseJavadocRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mappers.app" class="ApArticleMapper" method="loadArticleListByLocation" priority="3">
+接口方法【loadArticleListByLocation】必须使用javadoc注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/mappers/app/ApUserArticleListMapper.java">
+<violation beginline="10" endline="12" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mappers.app" class="ApUserArticleListMapper" priority="3">
+【ApUserArticleListMapper】缺少包含@author的注释信息
+</violation>
+<violation beginline="11" endline="11" begincolumn="29" endcolumn="144" rule="AbstractMethodOrInterfaceMethodMustUseJavadocRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mappers.app" class="ApUserArticleListMapper" method="loadArticleIdListByUser" priority="3">
+接口方法【loadArticleIdListByUser】必须使用javadoc注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/mappers/app/AppShowBehaviorEntryMapper.java">
+<violation beginline="6" endline="8" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mappers.app" class="AppShowBehaviorEntryMapper" priority="3">
+【AppShowBehaviorEntryMapper】缺少包含@author的注释信息
+</violation>
+<violation beginline="7" endline="7" begincolumn="21" endcolumn="120" rule="AbstractMethodOrInterfaceMethodMustUseJavadocRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mappers.app" class="AppShowBehaviorEntryMapper" method="selectByUserIdOrEquipmentId" priority="3">
+接口方法【selectByUserIdOrEquipmentId】必须使用javadoc注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/mappers/app/AppShowBehaviorMapper.java">
+<violation beginline="8" endline="12" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mappers.app" class="AppShowBehaviorMapper" priority="3">
+【AppShowBehaviorMapper】缺少包含@author的注释信息
+</violation>
+<violation beginline="9" endline="9" begincolumn="26" endcolumn="130" rule="AbstractMethodOrInterfaceMethodMustUseJavadocRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mappers.app" class="AppShowBehaviorMapper" method="selectListByEntryIdAndArticleIds" priority="3">
+接口方法【selectListByEntryIdAndArticleIds】必须使用javadoc注释
+</violation>
+<violation beginline="11" endline="11" begincolumn="10" endcolumn="98" rule="AbstractMethodOrInterfaceMethodMustUseJavadocRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mappers.app" class="AppShowBehaviorMapper" method="saveShowBehavior" priority="3">
+接口方法【saveShowBehavior】必须使用javadoc注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/dtos/ApUserFanDto.java">
+<violation beginline="10" endline="25" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.dtos" class="ApUserFanDto" priority="3">
+【ApUserFanDto】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/dtos/CommentDto.java">
+<violation beginline="7" endline="11" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.dtos" class="CommentDto" priority="3">
+【CommentDto】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/dtos/CommentReplytDto.java">
+<violation beginline="7" endline="13" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.dtos" class="CommentReplytDto" priority="3">
+【CommentReplytDto】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/dtos/StatisticDto.java">
+<violation beginline="9" endline="17" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.dtos" class="StatisticDto" priority="3">
+【StatisticDto】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/dtos/WmMaterialDto.java">
+<violation beginline="7" endline="13" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.dtos" class="WmMaterialDto" priority="3">
+【WmMaterialDto】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/dtos/WmMaterialListDto.java">
+<violation beginline="7" endline="9" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.dtos" class="WmMaterialListDto" priority="3">
+【WmMaterialListDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="8" endline="8" begincolumn="5" endcolumn="22" rule="AvoidCommentBehindStatementRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.dtos" class="WmMaterialListDto" variable="isCollected" priority="3">
+请不要使用行尾注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/dtos/WmNewsDto.java">
+<violation beginline="10" endline="23" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.dtos" class="WmNewsDto" priority="3">
+【WmNewsDto】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/dtos/WmNewsPageReqDto.java">
+<violation beginline="10" endline="18" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.dtos" class="WmNewsPageReqDto" priority="3">
+【WmNewsPageReqDto】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/pojos/WmFansPortrait.java">
+<violation beginline="10" endline="19" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.pojos" class="WmFansPortrait" priority="3">
+【WmFansPortrait】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/pojos/WmFansStatistics.java">
+<violation beginline="8" endline="29" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.pojos" class="WmFansStatistics" priority="3">
+【WmFansStatistics】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/pojos/WmMaterial.java">
+<violation beginline="9" endline="17" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.pojos" class="WmMaterial" priority="3">
+【WmMaterial】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/pojos/WmNews.java">
+<violation beginline="9" endline="28" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.pojos" class="WmNews" priority="3">
+【WmNews】缺少包含@author的注释信息
+</violation>
+<violation beginline="27" endline="27" begincolumn="13" endcolumn="26" rule="AvoidCommentBehindStatementRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.pojos" class="WmNews" variable="images" priority="3">
+请不要使用行尾注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/pojos/WmNewsMaterial.java">
+<violation beginline="6" endline="13" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.pojos" class="WmNewsMaterial" priority="3">
+【WmNewsMaterial】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/pojos/WmNewsStatistics.java">
+<violation beginline="9" endline="31" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.pojos" class="WmNewsStatistics" priority="3">
+【WmNewsStatistics】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/pojos/WmSubUser.java">
+<violation beginline="6" endline="11" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.pojos" class="WmSubUser" priority="3">
+【WmSubUser】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/pojos/WmUser.java">
+<violation beginline="8" endline="26" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.pojos" class="WmUser" priority="3">
+【WmUser】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/pojos/WmUserAuth.java">
+<violation beginline="6" endline="12" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.pojos" class="WmUserAuth" priority="3">
+【WmUserAuth】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/pojos/WmUserEquipment.java">
+<violation beginline="7" endline="16" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.pojos" class="WmUserEquipment" priority="3">
+【WmUserEquipment】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/media/pojos/WmUserLogin.java">
+<violation beginline="8" endline="18" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.media.pojos" class="WmUserLogin" priority="3">
+【WmUserLogin】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/mess/admin/AutoReviewClNewsSuccess.java">
+<violation beginline="10" endline="15" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mess.admin" class="AutoReviewClNewsSuccess" priority="3">
+【AutoReviewClNewsSuccess】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/mess/admin/SubmitArticleAuto.java">
+<violation beginline="6" endline="17" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mess.admin" class="SubmitArticleAuto" priority="3">
+【SubmitArticleAuto】缺少包含@author的注释信息
+</violation>
+<violation beginline="8" endline="8" begincolumn="13" endcolumn="29" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mess.admin" class="SubmitArticleAuto" variable="type" priority="3">
+字段【type】必须使用javadoc形式的注释
+</violation>
+<violation beginline="10" endline="10" begincolumn="13" endcolumn="30" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mess.admin" class="SubmitArticleAuto" variable="articleId" priority="3">
+字段【articleId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="13" endline="15" begincolumn="28" endcolumn="5" rule="EnumConstantsMustHaveCommentRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mess.admin" class="SubmitArticleAuto" priority="2">
+枚举【ArticleType】的字段缺少注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/mess/admin/SubmitUserinfoAuth.java">
+<violation beginline="6" endline="17" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mess.admin" class="SubmitUserinfoAuth" priority="3">
+【SubmitUserinfoAuth】缺少包含@author的注释信息
+</violation>
+<violation beginline="8" endline="8" begincolumn="13" endcolumn="30" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mess.admin" class="SubmitUserinfoAuth" variable="type" priority="3">
+字段【type】必须使用javadoc形式的注释
+</violation>
+<violation beginline="10" endline="10" begincolumn="13" endcolumn="27" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mess.admin" class="SubmitUserinfoAuth" variable="userId" priority="3">
+字段【userId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="13" endline="15" begincolumn="29" endcolumn="5" rule="EnumConstantsMustHaveCommentRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mess.admin" class="SubmitUserinfoAuth" priority="2">
+枚举【UserInfoType】的字段缺少注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/mess/app/UpdateArticle.java">
+<violation beginline="6" endline="20" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mess.app" class="UpdateArticle" priority="3">
+【UpdateArticle】缺少包含@author的注释信息
+</violation>
+<violation beginline="8" endline="8" begincolumn="13" endcolumn="35" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mess.app" class="UpdateArticle" variable="type" priority="3">
+字段【type】必须使用javadoc形式的注释
+</violation>
+<violation beginline="10" endline="10" begincolumn="13" endcolumn="30" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mess.app" class="UpdateArticle" variable="articleId" priority="3">
+字段【articleId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="12" endline="12" begincolumn="13" endcolumn="24" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mess.app" class="UpdateArticle" variable="add" priority="3">
+字段【add】必须使用javadoc形式的注释
+</violation>
+<violation beginline="17" endline="19" begincolumn="34" endcolumn="5" rule="EnumConstantsMustHaveCommentRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.mess.app" class="UpdateArticle" priority="2">
+枚举【UpdateArticleType】的字段缺少注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/quartz/dtos/QuartzJob.java">
+<violation beginline="7" endline="43" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.quartz.dtos" class="QuartzJob" priority="3">
+【QuartzJob】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/dtos/FansOperationDto.java">
+<violation beginline="7" endline="15" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.dtos" class="FansOperationDto" priority="3">
+【FansOperationDto】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/dtos/UserFansPageReqDto.java">
+<violation beginline="7" endline="10" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.dtos" class="UserFansPageReqDto" priority="3">
+【UserFansPageReqDto】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/dtos/UserRelationDto.java">
+<violation beginline="7" endline="26" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.dtos" class="UserRelationDto" priority="3">
+【UserRelationDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="9" endline="9" begincolumn="5" endcolumn="21" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.dtos" class="UserRelationDto" variable="authorId" priority="3">
+字段【authorId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="13" endline="13" begincolumn="5" endcolumn="19" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.dtos" class="UserRelationDto" variable="userId" priority="3">
+字段【userId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="17" endline="17" begincolumn="5" endcolumn="22" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.dtos" class="UserRelationDto" variable="articleId" priority="3">
+字段【articleId】必须使用javadoc形式的注释
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/pojos/ApUser.java">
+<violation beginline="6" endline="18" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.pojos" class="ApUser" priority="3">
+【ApUser】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/pojos/ApUserArticleList.java">
+<violation beginline="9" endline="19" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.pojos" class="ApUserArticleList" priority="3">
+【ApUserArticleList】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/pojos/ApUserChannel.java">
+<violation beginline="8" endline="15" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.pojos" class="ApUserChannel" priority="3">
+【ApUserChannel】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/pojos/ApUserDynamicList.java">
+<violation beginline="6" endline="11" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.pojos" class="ApUserDynamicList" priority="3">
+【ApUserDynamicList】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/pojos/ApUserEquipment.java">
+<violation beginline="7" endline="14" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.pojos" class="ApUserEquipment" priority="3">
+【ApUserEquipment】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/pojos/ApUserFan.java">
+<violation beginline="10" endline="24" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.pojos" class="ApUserFan" priority="3">
+【ApUserFan】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/pojos/ApUserFeedback.java">
+<violation beginline="7" endline="18" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.pojos" class="ApUserFeedback" priority="3">
+【ApUserFeedback】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/pojos/ApUserFollow.java">
+<violation beginline="10" endline="22" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.pojos" class="ApUserFollow" priority="3">
+【ApUserFollow】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/pojos/ApUserIdentity.java">
+<violation beginline="8" endline="26" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.pojos" class="ApUserIdentity" priority="3">
+【ApUserIdentity】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/pojos/ApUserInfo.java">
+<violation beginline="7" endline="25" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.pojos" class="ApUserInfo" priority="3">
+【ApUserInfo】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/pojos/ApUserLetter.java">
+<violation beginline="7" endline="17" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.pojos" class="ApUserLetter" priority="3">
+【ApUserLetter】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/pojos/ApUserMessage.java">
+<violation beginline="8" endline="19" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.pojos" class="ApUserMessage" priority="3">
+【ApUserMessage】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/pojos/ApUserRealname.java">
+<violation beginline="13" endline="30" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.pojos" class="ApUserRealname" priority="3">
+【ApUserRealname】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/user/pojos/ApUserSearch.java">
+<violation beginline="9" endline="17" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.user.pojos" class="ApUserSearch" priority="3">
+【ApUserSearch】缺少包含@author的注释信息
+</violation>
+</file>
+<file name="/Users/roy/Documents/Project/newsapp/newsapp-model/src/main/java/com/jianlang/model/websocket/dtos/WebSocketDto.java">
+<violation beginline="7" endline="14" begincolumn="8" endcolumn="1" rule="ClassMustHaveAuthorRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.websocket.dtos" class="WebSocketDto" priority="3">
+【WebSocketDto】缺少包含@author的注释信息
+</violation>
+<violation beginline="8" endline="8" begincolumn="5" endcolumn="24" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.websocket.dtos" class="WebSocketDto" variable="equipmentId" priority="3">
+字段【equipmentId】必须使用javadoc形式的注释
+</violation>
+<violation beginline="11" endline="11" begincolumn="5" endcolumn="17" rule="CommentsMustBeJavadocFormatRule" ruleset="AlibabaJavaComments" package="com.jianlang.model.websocket.dtos" class="WebSocketDto" variable="token" priority="3">
+字段【token】必须使用javadoc形式的注释
+</violation>
+</file>
+</pmd>
