@@ -27,4 +27,6 @@ public class ArticleTest {
         ResponseResult result = appArticleService.load(null, ArticleContants.LOADTYPE_LOAD_MORE);
         System.out.println(result.getData());
     }
+
+
 }

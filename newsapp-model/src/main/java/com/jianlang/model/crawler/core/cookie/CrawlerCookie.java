@@ -2,6 +2,9 @@ package com.jianlang.model.crawler.core.cookie;
 
 import java.util.Date;
 
+/**
+ * 用于框架设置Cookie
+ */
 public class CrawlerCookie {
 
     public CrawlerCookie() {

@@ -1,10 +1,16 @@
 package com.jianlang.model.crawler.core.proxy;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
- * 代理IP实体类
+ * 构建代理ip
  */
+@Setter
+@Getter
 public class CrawlerProxy implements Serializable {
 
 
@@ -29,20 +35,18 @@ public class CrawlerProxy implements Serializable {
     }
 
 
-    public String getHost() {
-        return host;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CrawlerProxy that = (CrawlerProxy) o;
+        return host.equals(that.host) &&
+                port.equals(that.port);
     }
 
-    public void setHost(String host) {
-        this.host = host;
-    }
-
-    public Integer getPort() {
-        return port;
-    }
-
-    public void setPort(Integer port) {
-        this.port = port;
+    @Override
+    public int hashCode() {
+        return Objects.hash(host, port);
     }
 
     @Override

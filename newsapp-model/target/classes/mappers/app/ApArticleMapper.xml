@@ -64,14 +64,6 @@
             </if>
         </where>
     </sql>
-    <!-- 依据ID获取 -->
-    <select id="selectById" resultMap="resultMap">
-        select
-        <include refid="Base_Column_List"/>
-        from ap_article
-        where id = #{id}
-
-    </select>
 
     <select id="selectListForStatistic" resultMap="resultStatisticMap">
         select author_id,count(1) as count from ap_article where publish_time between date_format(now(),'%Y-%m-%d') and date_format(now(),'%Y-%m-%d 23:59:59') group by author_id
@@ -200,5 +192,10 @@
         UPDATE ap_article SET sync_status = #{syncStatus} WHERE id=#{id}
     </update>
 
+    <select id="selectById" parameterType="java.lang.Long" resultMap="resultMap">
+        select *
+        from ap_article
+        where id = #{id}
+    </select>
 
 </mapper>

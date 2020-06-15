@@ -16,6 +16,7 @@
         <module>newsapp-article</module>
         <module>newsapp-user</module>
         <module>newsapp-login</module>
+        <module>newsapp-crawler</module>
     </modules>
 
     <!-- 继承Spring boot工程 -->

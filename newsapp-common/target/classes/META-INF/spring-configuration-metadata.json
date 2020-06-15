@@ -11,6 +11,11 @@
       "sourceType": "com.jianlang.common.mysql.core.TransactionConfig"
     },
     {
+      "name": "spring.elasticsearch.jest",
+      "type": "com.jianlang.common.elasticsearch.ElasticsearchConfig",
+      "sourceType": "com.jianlang.common.elasticsearch.ElasticsearchConfig"
+    },
+    {
       "name": "zk",
       "type": "com.jianlang.common.zookeeper.ZkConfig",
       "sourceType": "com.jianlang.common.zookeeper.ZkConfig"
@@ -51,6 +56,21 @@
       "name": "mysql.core.tx-scan-package",
       "type": "java.lang.String",
       "sourceType": "com.jianlang.common.mysql.core.TransactionConfig"
+    },
+    {
+      "name": "spring.elasticsearch.jest.connection-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.jianlang.common.elasticsearch.ElasticsearchConfig"
+    },
+    {
+      "name": "spring.elasticsearch.jest.read-time-out",
+      "type": "java.lang.Integer",
+      "sourceType": "com.jianlang.common.elasticsearch.ElasticsearchConfig"
+    },
+    {
+      "name": "spring.elasticsearch.jest.url",
+      "type": "java.lang.String",
+      "sourceType": "com.jianlang.common.elasticsearch.ElasticsearchConfig"
     },
     {
       "name": "zk.host",

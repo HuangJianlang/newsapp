@@ -47,7 +47,7 @@ public class DelayedUtils {
 
 
     /**
-     * 并发过滤
+     * 并发过滤: 有多个并发，只取其中一个取更新cookie
      */
     public synchronized static ConcurrentCallBack getConcurrentFilter(final long time) {
         final ConcurrentEntity concurrentEntity = new ConcurrentEntity();

@@ -55,10 +55,11 @@ public class AppShowBehaviorServiceImpl implements AppShowBehaviorService {
         //filter data
         List<Integer> articleIdsList = Arrays.asList(articleIds);
         if (!apShowBehaviors.isEmpty()){
-            apShowBehaviors.forEach(item ->{
-                Integer articleId = item.getArticleId();
-                articleIdsList.remove(articleId);
-            });
+            for(ApShowBehavior behavior : apShowBehaviors){
+                Integer articleId = behavior.getArticleId();
+                Integer index = articleIdsList.indexOf(articleId);
+                articleIdsList.remove(index);
+            }
         }
         //save
         if (!articleIdsList.isEmpty()){

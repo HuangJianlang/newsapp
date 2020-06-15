@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/heima-leadnews-behavior/pom.xml" />
         <option value="$PROJECT_DIR$/newsapp-behavior/pom.xml" />
+        <option value="$PROJECT_DIR$/heima-leadnews-crawler/pom.xml" />
       </list>
     </option>
   </component>

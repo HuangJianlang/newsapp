@@ -21,6 +21,9 @@ public class ClNewsAdditional {
     private Date createdTime;
     private Date count;
     private Date updatedTime;
+    private Date nextUpdateTime;
+    private Integer updateNum;
+
 
 
 }

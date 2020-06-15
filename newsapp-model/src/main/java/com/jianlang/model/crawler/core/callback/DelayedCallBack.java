@@ -1,6 +1,8 @@
 package com.jianlang.model.crawler.core.callback;
 
-
+/**
+ * 判断下载页面是否成功
+ */
 public interface DelayedCallBack {
     /**
      * 延时调用方法
