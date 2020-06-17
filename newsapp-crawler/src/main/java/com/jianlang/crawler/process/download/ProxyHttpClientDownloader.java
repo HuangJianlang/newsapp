@@ -120,9 +120,9 @@ public class ProxyHttpClientDownloader extends AbstractDownloader implements Pro
      */
     @Override
     public Page download(Request request, Task task) {
-        String handelType = crawlerHelper.getHandelType(request);
+        String handleType = crawlerHelper.gethandleType(request);
         long currentTime = System.currentTimeMillis();
-        log.info("开始下载页面数据，url:{},handelType:{}", request.getUrl(),handelType);
+        log.info("开始下载页面数据，url:{},handleType:{}", request.getUrl(),handleType);
         if (task == null || task.getSite() == null) {
             throw new NullPointerException("task or site can not be null");
         }
@@ -155,10 +155,10 @@ public class ProxyHttpClientDownloader extends AbstractDownloader implements Pro
             if (downloadStatus) {
                 page.setStatusCode(200);
                 onSuccess(request);
-                log.info("下载数据成功，url:{}，handelType:{},耗时：{}", request.getUrl(),handelType, System.currentTimeMillis() - currentTime);
+                log.info("下载数据成功，url:{}，handleType:{},耗时：{}", request.getUrl(),handleType, System.currentTimeMillis() - currentTime);
             } else {
                 onError(request);
-                log.error("下载文档失败，url:{},handelType:{},proxy:{},状态码：{}", page.getUrl().toString(),handelType, proxy, page.getStatusCode());
+                log.error("下载文档失败，url:{},handleType:{},proxy:{},状态码：{}", page.getUrl().toString(),handleType, proxy, page.getStatusCode());
             }
             return page;
         } catch (IOException e) {
@@ -237,7 +237,7 @@ public class ProxyHttpClientDownloader extends AbstractDownloader implements Pro
      * @param processFlowData
      */
     @Override
-    public void handel(ProcessFlowData processFlowData) {
+    public void handle(ProcessFlowData processFlowData) {
         Proxy[] proxies = getProxyArray(crawlerProxyProvider.getCrawlerProxyList());
         if (null != proxies && proxies.length > 0) {
             setProxyProvider(SimpleProxyProvider.from(proxies));

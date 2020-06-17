@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+//爬去初始页面
 @Component
 public class CsdnOriginalDataProcess extends AbstractOriginalDataProcess {
 
@@ -33,7 +34,7 @@ public class CsdnOriginalDataProcess extends AbstractOriginalDataProcess {
                 CrawlerParseItem parseItem = new CrawlerParseItem();
                 parseItem.setUrl(url + "?rnd=" + System.currentTimeMillis());
                 parseItem.setDocumentType(CrawlerEnum.DocumentType.INIT.name());
-                parseItem.setHandelType(CrawlerEnum.HandelType.FORWARD.name());
+                parseItem.sethandleType(CrawlerEnum.handleType.FORWARD.name());
                 return parseItem;
             }).collect(Collectors.toList());
         }

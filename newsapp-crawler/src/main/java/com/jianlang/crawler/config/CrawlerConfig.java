@@ -17,6 +17,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import us.codecraft.webmagic.Spider;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,8 @@ import java.util.ResourceBundle;
 @ConfigurationProperties(prefix = "crawler.init.url")
 //这里主要是获取要爬取网页的url
 public class CrawlerConfig {
+
+    private Spider spider;
     private String prefix;
     private String suffix;
     //获取 properties中的选项
@@ -168,5 +171,13 @@ public class CrawlerConfig {
         }};
 
         return parseRules;
+    }
+
+    public Spider getSpider(){
+        return spider;
+    }
+
+    public void setSpider(Spider spider){
+        this.spider = spider;
     }
 }

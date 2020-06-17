@@ -100,7 +100,7 @@ public class SeleniumClient {
      * @param proxy          处理的代理请求
      * @param chromeCallback 执行完成的回调
      */
-    private void handel(String url, Proxy proxy, ChromeCallback chromeCallback) {
+    private void handle(String url, Proxy proxy, ChromeCallback chromeCallback) {
         SeleniumDriver seleniumDriver = null;
         if (StringUtils.isNotEmpty(url) && null != chromeCallback) {
             try {
@@ -133,7 +133,7 @@ public class SeleniumClient {
             proxy = CrawlerProxyFactory.getSeleniumProxy(crawlerProxy);
         }
 
-        handel(url, proxy, driver -> {
+        handle(url, proxy, driver -> {
             driver.get(url);
             List<CrawlerCookie> crawlerCookieList = delayed(driver, cookieName);
             crawlerHtml.setCrawlerCookieList(crawlerCookieList);

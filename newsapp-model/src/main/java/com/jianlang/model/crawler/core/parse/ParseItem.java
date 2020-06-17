@@ -10,7 +10,7 @@ public abstract class ParseItem implements Serializable {
      * 处理类型 有正向 反向两种
      * FORWARD, 正向 REVERSE 反向
      */
-    private String handelType = null;
+    private String handleType = null;
     /**
      * 文档抓取类型
      */
@@ -34,12 +34,12 @@ public abstract class ParseItem implements Serializable {
      */
     public abstract String getParserContent();
 
-    public String getHandelType() {
-        return handelType;
+    public String gethandleType() {
+        return handleType;
     }
 
-    public void setHandelType(String handelType) {
-        this.handelType = handelType;
+    public void sethandleType(String handleType) {
+        this.handleType = handleType;
     }
 
     public String getDocumentType() {

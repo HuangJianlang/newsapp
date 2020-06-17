@@ -88,13 +88,13 @@ public class CrawlerHelper {
      * @param request
      * @return
      */
-    public String getHandelType(Request request) {
-        String handelType = CrawlerEnum.HandelType.FORWARD.name();
+    public String gethandleType(Request request) {
+        String handleType = CrawlerEnum.handleType.FORWARD.name();
         ParseItem parseItem = getParseItem(request);
         if (null != parseItem) {
-            handelType = parseItem.getHandelType();
+            handleType = parseItem.gethandleType();
         }
-        return handelType;
+        return handleType;
     }
 
 

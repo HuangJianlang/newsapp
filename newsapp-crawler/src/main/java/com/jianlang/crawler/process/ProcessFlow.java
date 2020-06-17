@@ -9,7 +9,7 @@ public interface ProcessFlow {
      *
      * @param processFlowData
      */
-    public void handel(ProcessFlowData processFlowData);
+    public void handle(ProcessFlowData processFlowData);
 
     /**
      * 获取抓取类型

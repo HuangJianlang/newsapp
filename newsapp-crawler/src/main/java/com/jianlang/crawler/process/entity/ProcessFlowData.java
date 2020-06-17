@@ -17,7 +17,7 @@ public class ProcessFlowData {
     /**
      * 处理类型
      */
-    private CrawlerEnum.HandelType handelType = CrawlerEnum.HandelType.FORWARD;
+    private CrawlerEnum.handleType handleType = CrawlerEnum.handleType.FORWARD;
 
 
     public List<ParseItem> getParseItemList() {
@@ -29,12 +29,12 @@ public class ProcessFlowData {
     }
 
 
-    public CrawlerEnum.HandelType getHandelType() {
-        return handelType;
+    public CrawlerEnum.handleType gethandleType() {
+        return handleType;
     }
 
-    public void setHandelType(CrawlerEnum.HandelType handelType) {
-        this.handelType = handelType;
+    public void sethandleType(CrawlerEnum.handleType handleType) {
+        this.handleType = handleType;
     }
 
 }

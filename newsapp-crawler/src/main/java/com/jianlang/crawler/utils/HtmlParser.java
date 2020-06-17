@@ -121,7 +121,7 @@ public class HtmlParser {
     private List<HtmlLabel> parserElement(Element element, ParserCallBack callBack) {
         List<HtmlLabel> htmlLabelList = new ArrayList<HtmlLabel>();
         //校验元素是否需要处理
-        if (isNeedHandel(element)) {
+        if (isNeedhandle(element)) {
             HtmlLabel htmlLabel = parseNodeByByElement(element);
             htmlLabelList.add(htmlLabel);
         } else {
@@ -147,7 +147,7 @@ public class HtmlParser {
             List<Element> elementList = new ArrayList<Element>();
             for (Node node : nodeList) {
                 //检查节点是否需要处理
-                if (isNeedHandel(node)) {
+                if (isNeedhandle(node)) {
                     //解析node节点
                     HtmlLabel htmlLabel = parseNode(node);
                     if (null != htmlLabel) {
@@ -258,7 +258,7 @@ public class HtmlParser {
         HtmlLabel htmlLabel = null;
         if (null != element) {
             String src = element.attr("src");
-            src = imageUrlHandel(src);
+            src = imageUrlhandle(src);
             String width = element.attr("width");
             String height = element.attr("height");
             htmlLabel = new HtmlLabel();
@@ -278,7 +278,7 @@ public class HtmlParser {
      * @param src
      * @return
      */
-    private String imageUrlHandel(String src) {
+    private String imageUrlhandle(String src) {
         if (StringUtils.isNotEmpty(src) && src.contains("?")) {
             src = src.substring(0, src.indexOf("?"));
         }
@@ -329,7 +329,7 @@ public class HtmlParser {
      *
      * @return
      */
-    private boolean isNeedHandel(Node node) {
+    private boolean isNeedhandle(Node node) {
         boolean flag = false;
         //没有子节点
         if (node.childNodes().isEmpty()) {
@@ -337,7 +337,7 @@ public class HtmlParser {
         } else {
             if (null != node && node instanceof Element) {
                 Element element = (Element) node;
-                flag = isNeedHandel(element);
+                flag = isNeedhandle(element);
             }
         }
         return flag;
@@ -349,7 +349,7 @@ public class HtmlParser {
      * @param element
      * @return
      */
-    private boolean isNeedHandel(Element element) {
+    private boolean isNeedhandle(Element element) {
         boolean flag = false;
         if (null != element) {
             String tagName = element.tagName();
