@@ -4,6 +4,8 @@ import java.util.Date;
 
 /**
  * 用于框架设置Cookie
+ * Cookie类, 普通的Java Class
+ * 里面封装了Cookie 的相关信息
  */
 public class CrawlerCookie {
 

@@ -37,17 +37,38 @@ public class CrawlerConfig {
     //获取 properties中的选项
     private static final ResourceBundle resourceBundle = ResourceBundle.getBundle("crawler");
     private static final String CRUX_COOKIE_NAME = resourceBundle.getString("crux.cookie.name");
-    private boolean isUsedProxyIp = Boolean.parseBoolean(resourceBundle.getString("proxy.isUsedProxyIp"));
+//    private boolean isUsedProxyIp = Boolean.parseBoolean(resourceBundle.getString("proxy.isUsedProxyIp"));
+    @Value("${proxy.isUsedProxyIp}")
+    private boolean isUsedProxyIp;
+    @Value("${init.crawler.Xpath}")
+    private String initCrawlerXpath;
+    @Value("${helper.crawler.Xpath}")
+    private String helperCrawlerXpath;
+    @Value("${crawler.help.nextPagingSize}")
+    private Integer crawlerPageSize;
 
+
+    /**
+     * 获取首页nav下的所有页面
+     * https://www.csdn.net/nav/java
+     * https://www.csdn.net/nav/web
+     * https://www.csdn.net/nav/python...
+     * @return
+     */
     public List<String> getInitCrawlerUrlList(){
         List<String> initCrawlerUrlList = new ArrayList<>();
+        //验证suffix的有效性
+        //String suffix = "java,web,arch,db,mobile,ops,sec,cloud"
         if(StringUtils.isNotEmpty(suffix)){
+            //["java", "web", "arch", "db", "mobile","ops","sec","cloud"]
             String[] urlArray = suffix.split(",");
+            //urlArray如果不为空，则处理
             if(urlArray!=null && urlArray.length>0){
                 for(int i = 0; i < urlArray.length; i++){
                     String initUrl = urlArray[i];
                     if(StringUtils.isNotEmpty(initUrl)){
                         if(! initUrl.toLowerCase().startsWith("http")){
+                            //把https://www.csdn.net/nav/ 与 java web arch 拼接
                             initCrawlerUrlList.add(prefix+initUrl);
                         }
                     }
@@ -57,6 +78,10 @@ public class CrawlerConfig {
         return initCrawlerUrlList;
     }
 
+    /**
+     * @Bean Indicates that a method produces a bean to be managed by the Spring container.
+     * @return
+     */
     @Bean
     public SeleniumClient getSeleniumClient() {
         return new SeleniumClient();
@@ -125,15 +150,6 @@ public class CrawlerConfig {
         crawlerProxyProvider.setUsedProxyIp(isUsedProxyIp);
         return crawlerProxyProvider;
     }
-
-    @Value("${init.crawler.Xpath}")
-    private String initCrawlerXpath;
-
-    @Value("${helper.crawler.Xpath}")
-    private String helperCrawlerXpath;
-
-    @Value("${crawler.help.nextPagingSize}")
-    private Integer crawlerPageSize;
 
     @Bean
     public CrawlerConfigProperty getCrawlerConfigProperty(){
