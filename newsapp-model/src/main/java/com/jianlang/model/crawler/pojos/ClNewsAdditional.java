@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.Date;
 
 /**
- * 回复
+ * 用于方向爬去数据时，更新相关信息
  */
 @Data
 public class ClNewsAdditional {

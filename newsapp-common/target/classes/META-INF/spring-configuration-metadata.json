@@ -16,6 +16,11 @@
       "sourceType": "com.jianlang.common.elasticsearch.ElasticsearchConfig"
     },
     {
+      "name": "spring.redis",
+      "type": "com.jianlang.common.redis.RedisConfiguration",
+      "sourceType": "com.jianlang.common.redis.RedisConfiguration"
+    },
+    {
       "name": "zk",
       "type": "com.jianlang.common.zookeeper.ZkConfig",
       "sourceType": "com.jianlang.common.zookeeper.ZkConfig"

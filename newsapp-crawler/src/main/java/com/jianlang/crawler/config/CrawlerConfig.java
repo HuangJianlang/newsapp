@@ -3,6 +3,7 @@ package com.jianlang.crawler.config;
 import com.jianlang.crawler.helper.CookieHelper;
 import com.jianlang.crawler.helper.CrawlerHelper;
 import com.jianlang.crawler.process.entity.CrawlerConfigProperty;
+import com.jianlang.crawler.process.scheduler.DbAndRedisScheduler;
 import com.jianlang.crawler.utils.SeleniumClient;
 import com.jianlang.model.crawler.core.callback.DataValidateCallBack;
 import com.jianlang.model.crawler.core.parse.ParseRule;
@@ -11,12 +12,15 @@ import com.jianlang.model.crawler.enums.CrawlerEnum;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
 import us.codecraft.webmagic.Spider;
 
 import java.util.ArrayList;
@@ -178,9 +182,9 @@ public class CrawlerConfig {
             //阅读量
             add(new ParseRule("readCount", CrawlerEnum.ParseRuleType.XPATH, "//span[@class='read-count']/text()"));
             //点赞量
-            add(new ParseRule("likes", CrawlerEnum.ParseRuleType.XPATH, "//div[@class='tool-box']/ul[@class='meau-list']/li[@class='btn-like-box']/button/p/text()"));
+            add(new ParseRule("likes", CrawlerEnum.ParseRuleType.XPATH, "//div[@class='more-toolbox']/div[@class='left-toolbox']/ul[@class='toolbox-list']/li[@class='tool-item tool-active is-like']/a/span[@class='count']/text()"));
             //回复次数
-            add(new ParseRule("commentCount", CrawlerEnum.ParseRuleType.XPATH, "//div[@class='tool-box']/ul[@class='meau-list']/li[@class='to-commentBox']/button/p/text()"));
+            add(new ParseRule("commentCount", CrawlerEnum.ParseRuleType.XPATH, "//div[@class='more-toolbox']/div[@class='left-toolbox']/ul[@class='toolbox-list']/li[@class='tool-item tool-active tool-item-comment']/a/span[@class='count']/text()"));
             //html内容
             //获取文章下所有内容
             add(new ParseRule("content", CrawlerEnum.ParseRuleType.XPATH, "//div[@id='content_views']/html()"));
@@ -195,5 +199,26 @@ public class CrawlerConfig {
 
     public void setSpider(Spider spider){
         this.spider = spider;
+    }
+
+
+    /**
+     * 初始化Scheduler
+     */
+
+    @Value("${redis.host}")
+    private String redisHost;
+    @Value("${redis.port}")
+    private int redisPort;
+    @Value("${redis.timeout}")
+    private int redisTimeout;
+    @Value("${redis.password}")
+    private String redisPassword;
+
+    @Bean
+    public DbAndRedisScheduler getDbAndRedisScheduler(){
+        GenericObjectPoolConfig genericObjectPoolConfig = new GenericObjectPoolConfig();
+        JedisPool jedisPool = new JedisPool(genericObjectPoolConfig, redisHost, redisPort, redisTimeout, null, 0);
+        return new DbAndRedisScheduler(jedisPool);
     }
 }
