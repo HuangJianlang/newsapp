@@ -29,11 +29,11 @@ public class ProcessFlowData {
     }
 
 
-    public CrawlerEnum.handleType gethandleType() {
+    public CrawlerEnum.handleType getHandleType() {
         return handleType;
     }
 
-    public void sethandleType(CrawlerEnum.handleType handleType) {
+    public void setHandleType(CrawlerEnum.handleType handleType) {
         this.handleType = handleType;
     }
 

@@ -34,7 +34,7 @@ public class CrawlerHelpPageProcessor extends AbstractCrawlerPageProcessor {
     @Override
     public void handlePage(Page page) {
         //获取处理类型
-        String handleType = crawlerHelper.gethandleType(page.getRequest());
+        String handleType = crawlerHelper.getHandleType(page.getRequest());
         long currentTime = System.currentTimeMillis();
         //个人空间的url
         String requestUrl = page.getUrl().get();

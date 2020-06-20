@@ -39,7 +39,7 @@ public class CrawlerPageProcessorManager {
      * @param page
      */
     public void handle(Page page){
-        String handleType = crawlerHelper.gethandleType(page.getRequest());
+        String handleType = crawlerHelper.getHandleType(page.getRequest());
         String documentType = crawlerHelper.getDocumentType(page.getRequest());
         for (AbstractCrawlerPageProcessor pageProcessor : abstractCrawlerPageProcessors){
             boolean needHandleType = pageProcessor.isNeedHandleType(handleType);

@@ -30,7 +30,7 @@ public class CrawlerDocPageProcessor extends AbstractCrawlerPageProcessor {
     @Override
     public void handlePage(Page page) {
         long currentTime = System.currentTimeMillis();
-        String handleType = crawlerHelper.gethandleType(page.getRequest());
+        String handleType = crawlerHelper.getHandleType(page.getRequest());
         log.info("Parsing article detail page starts, url: {}, handleType: ", page.getUrl(), handleType);
         //目标页面就要使用target rules
         List<ParseRule> targetParseRuleList = crawlerConfigProperty.getTargetParseRuleList();

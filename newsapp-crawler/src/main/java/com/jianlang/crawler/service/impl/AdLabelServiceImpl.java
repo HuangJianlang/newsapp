@@ -12,10 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -35,7 +32,10 @@ public class AdLabelServiceImpl implements AdLabelService {
         List<AdLabel> adLabels = null;
         if (labels != null){
             labels = labels.toLowerCase();
-            List<String> labelList = Arrays.asList(labels.split(","));
+            if (labels.startsWith(" ")){
+                labels = labels.substring(1, labels.length());
+            }
+            List<String> labelList = Arrays.asList(labels.split(" "));
             labelList = new ArrayList<>(labelList);
             adLabels = adLabelMapper.queryAdLabelByLabels(labelList);
             if (adLabels != null && !adLabels.isEmpty()){
@@ -62,10 +62,13 @@ public class AdLabelServiceImpl implements AdLabelService {
     private List<AdLabel> addLabelList(List<String> labelList, List<AdLabel> adLabels) {
         if(labelList !=null && !labelList.isEmpty()){
             for(AdLabel adLabel : adLabels){
-                for ( int i=0; i<labelList.size(); i++){
+                int i = 0;
+                while (i < labelList.size()){
                     if(labelList.get(i).contains(adLabel.getName())){
                         labelList.remove(i);
+                        continue;
                     }
+                    i++;
                 }
             }
         }

@@ -2,7 +2,7 @@
 <configuration>
     <properties>
         <property name="CONSOLE_PATTERN">%d{DEFAULT}^|%sn^|%level^|%t^|%c^|%M^|%msg%n</property>
-        <property name="FILE_NAME">heima-leadnews-crawler-1.0-SNAPSHOT</property>
+        <property name="FILE_NAME">newsapp-crawler-1.0-SNAPSHOT</property>
     </properties>
     <!--先定义所有的appender-->
     <appenders>

@@ -34,7 +34,7 @@ public class CsdnOriginalDataProcess extends AbstractOriginalDataProcess {
                 CrawlerParseItem parseItem = new CrawlerParseItem();
                 parseItem.setUrl(url + "?rnd=" + System.currentTimeMillis());
                 parseItem.setDocumentType(CrawlerEnum.DocumentType.INIT.name());
-                parseItem.sethandleType(CrawlerEnum.handleType.FORWARD.name());
+                parseItem.setHandleType(CrawlerEnum.handleType.FORWARD.name());
                 return parseItem;
             }).collect(Collectors.toList());
         }

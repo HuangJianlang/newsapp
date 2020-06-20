@@ -14,7 +14,7 @@ public class AdLabelServiceTest {
 
     @Test
     public void testGetLabelsIds(){
-        String labelIds = adLabelService.getLabelIds("CS,Spring,Java,Python");
+        String labelIds = adLabelService.getLabelIds("mockjs 前端 前端化工程");
         System.out.println(labelIds);
     }
 

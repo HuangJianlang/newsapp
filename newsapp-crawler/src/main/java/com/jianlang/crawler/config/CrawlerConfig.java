@@ -174,9 +174,9 @@ public class CrawlerConfig {
             //作者
             add(new ParseRule("author", CrawlerEnum.ParseRuleType.XPATH, "//a[@class='follow-nickName']/text()"));
             //发布日期
-            add(new ParseRule("releaseDate", CrawlerEnum.ParseRuleType.XPATH, "//span[@class='time']/text()"));
+            add(new ParseRule("releaseDate", CrawlerEnum.ParseRuleType.XPATH, "//div[@class='blog-content-box']/div[@class='article-header-box']/div[@class='article-header']/div[@class='article-info-box']/div[@class='article-bar-top']/div[@class='bar-content']/span[@class='time']/text()"));
             //标签
-            add(new ParseRule("labels", CrawlerEnum.ParseRuleType.XPATH, "//span[@class='tags-box']/a/text()"));
+            add(new ParseRule("labels", CrawlerEnum.ParseRuleType.XPATH, "//div[@class='blog-content-box']/div[@class='article-header-box']/div[@class='article-header']/div[@class='article-info-box']/div[@class='blog-tags-box']/div[@class='tags-box artic-tag-box']/a[@class='tag-link']/text()"));
             //个人空间
             add(new ParseRule("personalSpace", CrawlerEnum.ParseRuleType.XPATH, "//a[@class='follow-nickName']/@href"));
             //阅读量

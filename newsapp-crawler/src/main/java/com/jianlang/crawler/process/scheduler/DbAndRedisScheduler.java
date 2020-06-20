@@ -38,7 +38,7 @@ public class DbAndRedisScheduler extends RedisScheduler implements ProcessFlow {
     public boolean isDuplicate(Request request, Task task) {
         //只有在正向的时候才需要排重
         boolean isExist = false;
-        String handleType = crawlerHelper.gethandleType(request);
+        String handleType = crawlerHelper.getHandleType(request);
         if (CrawlerEnum.handleType.FORWARD.name().equals(handleType)){
             log.info("Checking duplicate, url:{}", request.getUrl());
             //redis 排重

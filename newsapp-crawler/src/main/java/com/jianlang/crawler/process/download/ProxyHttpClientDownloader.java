@@ -120,7 +120,7 @@ public class ProxyHttpClientDownloader extends AbstractDownloader implements Pro
      */
     @Override
     public Page download(Request request, Task task) {
-        String handleType = crawlerHelper.gethandleType(request);
+        String handleType = crawlerHelper.getHandleType(request);
         long currentTime = System.currentTimeMillis();
         log.info("开始下载页面数据，url:{},handleType:{}", request.getUrl(),handleType);
         if (task == null || task.getSite() == null) {

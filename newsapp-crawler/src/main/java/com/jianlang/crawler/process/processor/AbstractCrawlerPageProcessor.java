@@ -47,7 +47,7 @@ public abstract class AbstractCrawlerPageProcessor extends AbstractProcessFlow i
     @Override
     public void process(Page page) {
         long currentTime = System.currentTimeMillis();
-        String handleType = crawlerHelper.gethandleType(page.getRequest());
+        String handleType = crawlerHelper.getHandleType(page.getRequest());
         log.info("parsing web site start: url:{}, handleType:{}", page.getUrl(),handleType);
         crawlerPageProcessorManager.handle(page);
         log.info("pasring web site complete: url:{}, handleType:{}, totalTime:{}", page.getUrl(), handleType, System.currentTimeMillis()-currentTime);
@@ -90,7 +90,7 @@ public abstract class AbstractCrawlerPageProcessor extends AbstractProcessFlow i
                 CrawlerParseItem crawlerParseItem = new CrawlerParseItem();
                 crawlerParseItem.setUrl(url);
                 crawlerParseItem.setDocumentType(documentType.name());
-                crawlerParseItem.sethandleType(crawlerHelper.gethandleType(request));
+                crawlerParseItem.setHandleType(crawlerHelper.getHandleType(request));
                 parseItemList.add(crawlerParseItem);
             }
         }

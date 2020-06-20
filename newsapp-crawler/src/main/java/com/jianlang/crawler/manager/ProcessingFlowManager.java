@@ -107,7 +107,7 @@ public class ProcessingFlowManager {
     public void startTask(List<ParseItem> parseItems, CrawlerEnum.handleType handleType){
         ProcessFlowData processFlowData = new ProcessFlowData();
         processFlowData.setParseItemList(parseItems);
-        processFlowData.sethandleType(handleType);
+        processFlowData.setHandleType(handleType);
         for (ProcessFlow processFlow: processFlowList){
             processFlow.handle(processFlowData);
         }
@@ -115,7 +115,7 @@ public class ProcessingFlowManager {
     }
 
     /**
-     * 正向爬去
+     * 正向爬取
      */
     public void handle(){
         startTask(null, CrawlerEnum.handleType.FORWARD);

@@ -34,11 +34,11 @@ public abstract class ParseItem implements Serializable {
      */
     public abstract String getParserContent();
 
-    public String gethandleType() {
+    public String getHandleType() {
         return handleType;
     }
 
-    public void sethandleType(String handleType) {
+    public void setHandleType(String handleType) {
         this.handleType = handleType;
     }
 

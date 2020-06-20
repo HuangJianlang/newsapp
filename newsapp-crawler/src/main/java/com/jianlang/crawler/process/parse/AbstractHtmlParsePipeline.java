@@ -52,7 +52,7 @@ public abstract class AbstractHtmlParsePipeline<T> extends AbstractProcessFlow i
     public void process(ResultItems resultItems, Task task) {
         String url = resultItems.getRequest().getUrl();
         String documentType = crawlerHelper.getDocumentType(resultItems.getRequest());
-        String handleType = crawlerHelper.gethandleType(resultItems.getRequest());
+        String handleType = crawlerHelper.getHandleType(resultItems.getRequest());
         log.info("Parsing page htmls starts, url:{}, handleType:{}", url, handleType);
         if(! CrawlerEnum.DocumentType.PAGE.name().equals(documentType)){
             return;
@@ -61,10 +61,10 @@ public abstract class AbstractHtmlParsePipeline<T> extends AbstractProcessFlow i
         if (parseItem!=null && StringUtils.isNotEmpty(url)){
             Map<String, Object> itemsAll = resultItems.getAll();
             //前置参数处理 评论处理
-            preParamterHandle(itemsAll);
+            preParameterHandle(itemsAll);
             if(url.equals(parseItem.getInitialUrl())){
                 ReflectUtils.setPropertie(parseItem, itemsAll, true);
-                parseItem.sethandleType(crawlerHelper.gethandleType(resultItems.getRequest()));
+                parseItem.setHandleType(crawlerHelper.getHandleType(resultItems.getRequest()));
                 handleHtmlData((T) parseItem);
             }
         }
@@ -77,7 +77,7 @@ public abstract class AbstractHtmlParsePipeline<T> extends AbstractProcessFlow i
      */
     protected abstract void handleHtmlData(T parseItem);
 
-    protected abstract void preParamterHandle(Map<String, Object> itemsAll);
+    protected abstract void preParameterHandle(Map<String, Object> itemsAll);
 
     public String getParseExpression() {
         return "p,pre,h1,h2,h3,h4,h5";

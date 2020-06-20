@@ -14,7 +14,7 @@ public class ProcessingFlowManagerTest {
     private ProcessingFlowManager processingFlowManager;
 
     @Test
-    public void test(){
+    public void testForward(){
         processingFlowManager.handle();
         try {
             Thread.sleep(Integer.MAX_VALUE);
