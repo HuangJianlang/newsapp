@@ -5,4 +5,5 @@ import com.jianlang.model.article.pojos.ApArticleContent;
 
 public interface ApArticleContentMapper {
     ApArticleContent selectByArticleId(Integer articleId);
+    void insert(ApArticleContent apArticleContent);
 }

@@ -5,8 +5,13 @@ import com.jianlang.model.crawler.pojos.ClNews;
 import java.util.List;
 
 public interface CrawlerNewsService {
-    public void saveNews(ClNews clNews);
-    public void updateNews(ClNews clNews);
-    public void deleteByUrl(String url);
-    public List<ClNews> queryList(ClNews clNews);
+    void saveNews(ClNews clNews);
+    void updateNews(ClNews clNews);
+    void deleteByUrl(String url);
+    List<ClNews> queryList(ClNews clNews);
+
+    //save to Aricle database
+    void saveNewsAsArticle();
+    void saveNewsAsArticle(ClNews clNews);
+    void saveNewsAsArticle(Integer id);
 }

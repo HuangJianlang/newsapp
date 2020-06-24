@@ -16,6 +16,11 @@
       "sourceType": "com.jianlang.common.elasticsearch.ElasticsearchConfig"
     },
     {
+      "name": "spring.quartz",
+      "type": "com.jianlang.common.quartz.QuartzConfig",
+      "sourceType": "com.jianlang.common.quartz.QuartzConfig"
+    },
+    {
       "name": "spring.redis",
       "type": "com.jianlang.common.redis.RedisConfiguration",
       "sourceType": "com.jianlang.common.redis.RedisConfiguration"
@@ -76,6 +81,16 @@
       "name": "spring.elasticsearch.jest.url",
       "type": "java.lang.String",
       "sourceType": "com.jianlang.common.elasticsearch.ElasticsearchConfig"
+    },
+    {
+      "name": "spring.quartz.group-prefix",
+      "type": "java.lang.String",
+      "sourceType": "com.jianlang.common.quartz.QuartzConfig"
+    },
+    {
+      "name": "spring.quartz.scheduler-name",
+      "type": "java.lang.String",
+      "sourceType": "com.jianlang.common.quartz.QuartzConfig"
     },
     {
       "name": "zk.host",

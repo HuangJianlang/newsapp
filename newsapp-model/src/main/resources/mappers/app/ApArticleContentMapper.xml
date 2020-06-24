@@ -18,4 +18,8 @@
         from ap_article_content
         where article_id = #{articleId}
     </select>
+    <insert id="insert" parameterType="com.jianlang.model.article.pojos.ApArticleContent">
+        insert into ap_article_content (article_id,content) values (#{articleId},#{content})
+    </insert>
+
 </mapper>

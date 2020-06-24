@@ -4,16 +4,21 @@ import com.jianlang.crawler.helper.CookieHelper;
 import com.jianlang.crawler.helper.CrawlerHelper;
 import com.jianlang.crawler.process.entity.CrawlerConfigProperty;
 import com.jianlang.crawler.process.scheduler.DbAndRedisScheduler;
+import com.jianlang.crawler.service.CrawlerIpPoolService;
 import com.jianlang.crawler.utils.SeleniumClient;
 import com.jianlang.model.crawler.core.callback.DataValidateCallBack;
+import com.jianlang.model.crawler.core.callback.ProxyProviderCallBack;
 import com.jianlang.model.crawler.core.parse.ParseRule;
+import com.jianlang.model.crawler.core.proxy.CrawlerProxy;
 import com.jianlang.model.crawler.core.proxy.CrawlerProxyProvider;
 import com.jianlang.model.crawler.enums.CrawlerEnum;
+import com.jianlang.model.crawler.pojos.ClIpPool;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -51,6 +56,8 @@ public class CrawlerConfig {
     @Value("${crawler.help.nextPagingSize}")
     private Integer crawlerPageSize;
 
+    @Autowired
+    private CrawlerIpPoolService crawlerIpPoolService;
 
     /**
      * 获取首页nav下的所有页面
@@ -152,8 +159,46 @@ public class CrawlerConfig {
     public CrawlerProxyProvider getCrawlerProxyProvider() {
         CrawlerProxyProvider crawlerProxyProvider = new CrawlerProxyProvider();
         crawlerProxyProvider.setUsedProxyIp(isUsedProxyIp);
+        //动态代理ip
+        crawlerProxyProvider.setProxyProviderCallBack(new ProxyProviderCallBack() {
+            @Override
+            public List<CrawlerProxy> getProxyList() {
+                return getCrawlerProxyList();
+            }
+
+            @Override
+            public void unavailable(CrawlerProxy crawlerProxy) {
+                setUnavailable(crawlerProxy);
+            }
+        });
         return crawlerProxyProvider;
     }
+
+    /**
+     * 获取初始化的ip列表
+     * @return
+     */
+    private List<CrawlerProxy> getCrawlerProxyList(){
+        List<CrawlerProxy> proxies = new ArrayList<>();
+        ClIpPool clIpPool = new ClIpPool();
+        //响应时间小于等于5s
+        clIpPool.setDuration(5);
+        List<ClIpPool> clIpPools = crawlerIpPoolService.queryAvailableList(clIpPool);
+        if (clIpPools != null && !clIpPools.isEmpty()){
+            for(ClIpPool pool : clIpPools){
+                proxies.add(new CrawlerProxy(pool.getIp(), pool.getPort()));
+            }
+        }
+        return proxies;
+    }
+
+
+    private void setUnavailable(CrawlerProxy crawlerProxy){
+        if (crawlerProxy != null){
+            crawlerIpPoolService.unAvailableProxy(crawlerProxy, "Expired");
+        }
+    }
+
 
     @Bean
     public CrawlerConfigProperty getCrawlerConfigProperty(){
@@ -218,7 +263,7 @@ public class CrawlerConfig {
     @Bean
     public DbAndRedisScheduler getDbAndRedisScheduler(){
         GenericObjectPoolConfig genericObjectPoolConfig = new GenericObjectPoolConfig();
-        JedisPool jedisPool = new JedisPool(genericObjectPoolConfig, redisHost, redisPort, redisTimeout, null, 0);
+        JedisPool jedisPool = new JedisPool(genericObjectPoolConfig, redisHost, redisPort, redisTimeout, redisPassword, 0);
         return new DbAndRedisScheduler(jedisPool);
     }
 }

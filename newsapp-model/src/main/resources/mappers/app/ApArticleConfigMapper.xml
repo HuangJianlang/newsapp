@@ -10,10 +10,15 @@
         <result column="is_delete" property="isDelete"/>
     </resultMap>
     <sql id="Base_Column_List" >
-    id, article_id, is_comment, is_forward, is_down, is_delete
-  </sql>
+        id, article_id, is_comment, is_forward, is_down, is_delete
+    </sql>
     <!-- 通过文章ID查询文章配置 -->
     <select id="selectByArticleId" resultMap="BaseResultMap" parameterType="int" >
         select * from ap_article_config where article_id = #{articleId}
     </select>
+    <insert id="insert" parameterType="com.jianlang.model.article.pojos.ApArticleConfig">
+        insert into ap_article_config (article_id,is_comment,is_forward,is_down,is_delete) values(
+        #{articleId},#{isComment},#{isForward},#{isDown},#{isDelete});
+    </insert>
+
 </mapper>

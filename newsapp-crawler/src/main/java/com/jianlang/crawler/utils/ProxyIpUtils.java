@@ -45,7 +45,6 @@ public class ProxyIpUtils {
         HttpResponse response = client.execute(get);
         statusCode = response.getStatusLine().getStatusCode();
 
-
         return statusCode;
     }
 }

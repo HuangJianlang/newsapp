@@ -76,7 +76,7 @@
       #{forward}, #{unlikes}, #{collection},
       #{createdTime}, #{count}, #{updatedTime},#{updateNum},#{nextUpdateTime}
       )
-  </insert>
+    </insert>
     <insert id="insertSelective" parameterType="com.jianlang.model.crawler.pojos.ClNewsAdditional"
             keyProperty="id" useGeneratedKeys="true">
 

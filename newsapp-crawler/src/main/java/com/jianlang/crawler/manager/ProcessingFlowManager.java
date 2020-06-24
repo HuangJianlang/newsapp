@@ -4,6 +4,7 @@ import com.jianlang.crawler.config.CrawlerConfig;
 import com.jianlang.crawler.process.ProcessFlow;
 import com.jianlang.crawler.process.entity.CrawlerComponent;
 import com.jianlang.crawler.process.entity.ProcessFlowData;
+import com.jianlang.crawler.service.CrawlerNewsAdditionalService;
 import com.jianlang.model.crawler.core.parse.ParseItem;
 import com.jianlang.model.crawler.enums.CrawlerEnum;
 import lombok.extern.log4j.Log4j2;
@@ -18,6 +19,7 @@ import us.codecraft.webmagic.scheduler.Scheduler;
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
 
 @Component
@@ -117,7 +119,39 @@ public class ProcessingFlowManager {
     /**
      * 正向爬取
      */
-    public void handle(){
+    public void forwardHandle(){
         startTask(null, CrawlerEnum.handleType.FORWARD);
     }
+
+
+    @Autowired
+    private CrawlerNewsAdditionalService crawlerNewsAdditionalService;
+
+    /**
+     * 逆向处理
+     */
+    public void reverseHandle(){
+        List<ParseItem> parseItemList = crawlerNewsAdditionalService.queryIncrementParseItem(new Date());
+        handleReverse(parseItemList);
+        if (parseItemList != null && !parseItemList.isEmpty()){
+            log.info("Reverse updating starts, increment data:{}", parseItemList.size());
+            startTask(parseItemList, CrawlerEnum.handleType.REVERSE);
+        } else {
+            log.info("No increment data");
+        }
+    }
+
+    /**
+     * 设置爬去的类型 -> 强调是Reverse
+     * @param parseItemList
+     */
+    private void handleReverse(List<ParseItem> parseItemList) {
+        if (parseItemList != null){
+            for (ParseItem parseItem :  parseItemList){
+                parseItem.setDocumentType(CrawlerEnum.DocumentType.PAGE.name());
+                parseItem.setHandleType(CrawlerEnum.handleType.REVERSE.name());
+            }
+        }
+    }
+
 }

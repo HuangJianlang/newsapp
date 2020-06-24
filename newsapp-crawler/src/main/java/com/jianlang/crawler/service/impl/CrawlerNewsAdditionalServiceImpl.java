@@ -87,7 +87,7 @@ public class CrawlerNewsAdditionalServiceImpl implements CrawlerNewsAdditionalSe
                 }
             }
         }
-        return null;
+        return parseItemList;
     }
 
     public ParseItem toParseItem(ClNewsAdditional clNewsAdditional){

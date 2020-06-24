@@ -15,7 +15,17 @@ public class ProcessingFlowManagerTest {
 
     @Test
     public void testForward(){
-        processingFlowManager.handle();
+        processingFlowManager.forwardHandle();
+        try {
+            Thread.sleep(Integer.MAX_VALUE);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testReverse(){
+        processingFlowManager.reverseHandle();
         try {
             Thread.sleep(Integer.MAX_VALUE);
         }catch (InterruptedException e){

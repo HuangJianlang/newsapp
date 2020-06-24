@@ -9,4 +9,5 @@ import java.util.List;
  */
 public interface ProxyProviderCallBack {
     public List<CrawlerProxy> getProxyList();
+    public void unavailable(CrawlerProxy crawlerProxy);
 }

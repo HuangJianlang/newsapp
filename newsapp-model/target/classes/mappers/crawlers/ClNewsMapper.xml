@@ -50,10 +50,7 @@
         </where>
     </sql>
     <select id="selectList" resultMap="ResultMapWithBLOBs">
-        select
-        <include refid="Base_Column_List"/>
-        <include refid="Blob_Column_List"/>
-        from cl_news
+        select * from cl_news
         <include refid="Base_Column_where"/>
     </select>
     <select id="selectByIdAndStatus" resultMap="ResultMapWithBLOBs">
