@@ -1,6 +1,8 @@
 package com.jianlang.behavior.service.impl;
 
+import com.jianlang.behavior.kafa.BehaviorMessageSender;
 import com.jianlang.behavior.service.AppReadBehaviorService;
+import com.jianlang.common.kafka.messages.behavior.UserReadMessage;
 import com.jianlang.common.zookeeper.sequence.Sequences;
 import com.jianlang.model.behavior.dtos.ReadBehaviorDto;
 import com.jianlang.model.behavior.pojos.ApBehaviorEntry;
@@ -25,6 +27,8 @@ public class AppReadBehaviorServiceImpl implements AppReadBehaviorService {
     private AppShowBehaviorEntryMapper appShowBehaviorEntryMapper;
     @Autowired
     private ApReadBehaviorMapper apReadBehaviorMapper;
+    @Autowired
+    private BehaviorMessageSender sender;
     
     @Override
     public ResponseResult saveReadBehavior(ReadBehaviorDto dto) {
@@ -65,6 +69,9 @@ public class AppReadBehaviorServiceImpl implements AppReadBehaviorService {
         int code = 0;
         if (isInserted){
             code = apReadBehaviorMapper.insert(apReadBehavior);
+            if (code == 1){
+                sender.sendMessagePlus(new UserReadMessage(apReadBehavior), userId, true);
+            }
         }else{
             code = apReadBehaviorMapper.update(apReadBehavior);
         }

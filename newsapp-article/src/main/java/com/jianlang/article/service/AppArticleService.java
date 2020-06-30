@@ -2,6 +2,7 @@ package com.jianlang.article.service;
 
 import com.jianlang.model.article.dtos.ArticleHomeDto;
 import com.jianlang.model.common.dtos.ResponseResult;
+import com.jianlang.model.mess.app.ArticleVisitStreamDto;
 
 public interface AppArticleService {
     /**
@@ -11,4 +12,6 @@ public interface AppArticleService {
      * @return
      */
     ResponseResult load(ArticleHomeDto dto, Short loadType);
+
+    ResponseResult updateArticleView(ArticleVisitStreamDto dto);
 }

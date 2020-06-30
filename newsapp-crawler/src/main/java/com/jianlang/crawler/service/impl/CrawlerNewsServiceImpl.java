@@ -11,9 +11,11 @@ import com.jianlang.model.admin.pojos.AdChannel;
 import com.jianlang.model.article.pojos.*;
 import com.jianlang.model.crawler.core.parse.ZipUtils;
 import com.jianlang.model.crawler.pojos.ClNews;
+import com.jianlang.model.crawler.pojos.ClNewsAdditional;
 import com.jianlang.model.mappers.admin.AdChannelLabelMapper;
 import com.jianlang.model.mappers.admin.AdChannelMapper;
 import com.jianlang.model.mappers.app.*;
+import com.jianlang.model.mappers.crawlers.ClNewsAdditionalMapper;
 import com.jianlang.model.mappers.crawlers.ClNewsMapper;
 import io.searchbox.client.JestClient;
 import io.searchbox.client.JestResult;
@@ -35,6 +37,8 @@ public class CrawlerNewsServiceImpl implements CrawlerNewsService {
 
     @Autowired
     private ClNewsMapper clNewsMapper;
+    @Autowired
+    private ClNewsAdditionalMapper clNewsAdditionalMapper;
     @Autowired
     private AdChannelMapper adChannelMapper;
     @Autowired
@@ -73,6 +77,7 @@ public class CrawlerNewsServiceImpl implements CrawlerNewsService {
         return clNewsMapper.selectList(clNews);
     }
 
+    //Save news to articles
     @Override
     public void saveNewsAsArticle() {
         ClNews clNews = new ClNews();
@@ -92,6 +97,7 @@ public class CrawlerNewsServiceImpl implements CrawlerNewsService {
         if (content == null || title == null){
             return;
         }
+        // TODO: 6/24/20 计算图文匹配度
         List<String> images = new ArrayList<>();
         StringBuilder stringBuilder = new StringBuilder();
         JSONArray jsonArray = JSON.parseArray(content);
@@ -193,6 +199,7 @@ public class CrawlerNewsServiceImpl implements CrawlerNewsService {
     }
 
     private ApArticle saveArticleFromCrawler(List<String> images, Integer channelId, String channelName, Integer id, ClNews clNews) {
+        ClNewsAdditional clNewsAdditional = clNewsAdditionalMapper.selectByNewsId(clNews.getId());
         ApArticle article = new ApArticle();
         article.setChannelId(channelId);
         article.setChannelName(channelName);
@@ -213,6 +220,9 @@ public class CrawlerNewsServiceImpl implements CrawlerNewsService {
         article.setPublishTime(new Date());
         article.setAuthorId(new Long(id));
         article.setLayout(layout);
+        article.setLikes(clNewsAdditional.getLikes());
+        article.setViews(clNewsAdditional.getReadCount());
+        article.setCollection(clNewsAdditional.getCollection());
         apArticleMapper.insert(article);
         return article;
     }

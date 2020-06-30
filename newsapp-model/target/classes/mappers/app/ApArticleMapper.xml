@@ -198,4 +198,12 @@
         where id = #{id}
     </select>
 
+    <update id="updateArticleView">
+        UPDATE ap_article SET
+        views = GREATEST(IFNULL(views,0) + #{viewCount}, #{viewCount}),
+        collection = GREATEST(IFNULL(collection,0) + #{collectCount}, #{collectCount}),
+        comment = GREATEST(IFNULL(comment,0) + #{commontCount}, #{commontCount}),
+        likes = GREATEST(IFNULL(likes,0) + #{likeCount}, #{likeCount})
+        WHERE id=#{articleId}
+    </update>
 </mapper>

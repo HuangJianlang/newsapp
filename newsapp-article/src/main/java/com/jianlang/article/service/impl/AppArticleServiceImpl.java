@@ -1,17 +1,19 @@
 package com.jianlang.article.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.jianlang.article.service.AppArticleService;
-import com.jianlang.common.article.constants.ArticleContants;
+import com.jianlang.common.article.constants.ArticleConstants;
 import com.jianlang.model.article.dtos.ArticleHomeDto;
 import com.jianlang.model.article.pojos.ApArticle;
 import com.jianlang.model.common.dtos.ResponseResult;
 import com.jianlang.model.mappers.app.ApArticleMapper;
 import com.jianlang.model.mappers.app.ApUserArticleListMapper;
+import com.jianlang.model.mess.app.ArticleVisitStreamDto;
 import com.jianlang.model.user.pojos.ApUser;
 import com.jianlang.model.user.pojos.ApUserArticleList;
 import com.jianlang.utils.threadlocal.AppThreadLocalUtils;
+import lombok.extern.log4j.Log4j2;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.net.nntp.Article;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +22,7 @@ import java.util.List;
 
 //Service加在实现上
 @Service
+@Log4j2
 @SuppressWarnings("all")
 public class AppArticleServiceImpl implements AppArticleService {
 
@@ -49,11 +52,11 @@ public class AppArticleServiceImpl implements AppArticleService {
 
         //validate channel
         if(StringUtils.isEmpty(dto.getTag())){
-            dto.setTag(ArticleContants.DEFAULT_TAG);
+            dto.setTag(ArticleConstants.DEFAULT_TAG);
         }
         //
-        if(!loadType.equals(ArticleContants.LOADTYPE_LOAD_MORE) && !loadType.equals(ArticleContants.LOADTYPE_LOAD_NEW)){
-            loadType = ArticleContants.LOADTYPE_LOAD_MORE;
+        if(!loadType.equals(ArticleConstants.LOADTYPE_LOAD_MORE) && !loadType.equals(ArticleConstants.LOADTYPE_LOAD_NEW)){
+            loadType = ArticleConstants.LOADTYPE_LOAD_MORE;
         }
         //get user info
         ApUser user = AppThreadLocalUtils.getUser();
@@ -91,5 +94,13 @@ public class AppArticleServiceImpl implements AppArticleService {
      */
     private List<ApArticle> getDefaultArticles(ArticleHomeDto dto, Short loadType){
         return apArticleMapper.loadArticleListByLocation(dto, loadType);
+    }
+
+    @Override
+    public ResponseResult updateArticleView(ArticleVisitStreamDto dto) {
+        int rows = apArticleMapper.updateArticleView(dto.getArticleId(),
+                dto.getView(),dto.getCollect(),dto.getCommont(),dto.getLike());
+        log.info("更新文章阅读数#articleId：{},dto：{}", dto.getArticleId(), JSON.toJSONString(dto),rows);
+        return ResponseResult.okResult(rows);
     }
 }

@@ -1,6 +1,7 @@
 package com.jianlang.behavior.test;
 
 import com.jianlang.behavior.BehaviorJarApplication;
+import com.jianlang.behavior.service.AppLikesBehaviorService;
 import com.jianlang.behavior.service.AppShowBehaviorService;
 import com.jianlang.model.article.pojos.ApArticle;
 import com.jianlang.model.behavior.dtos.LikesBehaviorDto;
@@ -62,5 +63,20 @@ public class BehaviorTest {
         MockHttpServletRequestBuilder builder = MockMvcRequestBuilders.post("/api/v1/behavior/like_behavior")
                 .contentType(MediaType.APPLICATION_JSON_VALUE).content(mapper.writeValueAsBytes(dto));
         mockMvc.perform(builder).andExpect(MockMvcResultMatchers.status().isOk()).andDo(MockMvcResultHandlers.print());
+    }
+
+    @Autowired
+    private AppLikesBehaviorService appLikesBehaviorService;
+
+    @Test
+    public void testLikesSave(){
+        ApUser user = new ApUser();
+        user.setId(1l);
+        AppThreadLocalUtils.setUser(user);
+        LikesBehaviorDto dto = new LikesBehaviorDto();
+        dto.setEntryId(1);
+        dto.setOperation((short)0);
+        dto.setType((short)0);
+        appLikesBehaviorService.saveLikesBehavior(dto);
     }
 }

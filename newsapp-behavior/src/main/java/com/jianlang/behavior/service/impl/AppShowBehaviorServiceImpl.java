@@ -14,6 +14,7 @@ import com.jianlang.utils.threadlocal.AppThreadLocalUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -54,11 +55,12 @@ public class AppShowBehaviorServiceImpl implements AppShowBehaviorService {
         List<ApShowBehavior> apShowBehaviors = appShowBehaviorMapper.selectListByEntryIdAndArticleIds(apBehaviorEntry.getId(), articleIds);
         //filter data
         List<Integer> articleIdsList = Arrays.asList(articleIds);
+        articleIdsList = new ArrayList<>(articleIdsList);
         if (!apShowBehaviors.isEmpty()){
             for(ApShowBehavior behavior : apShowBehaviors){
                 Integer articleId = behavior.getArticleId();
-                Integer index = articleIdsList.indexOf(articleId);
-                articleIdsList.remove(index);
+                //int index = articleIdsList.indexOf(articleId);
+                articleIdsList.remove(articleId);
             }
         }
         //save

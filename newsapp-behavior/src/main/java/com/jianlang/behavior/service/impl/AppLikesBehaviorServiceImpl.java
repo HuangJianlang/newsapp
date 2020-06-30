@@ -1,6 +1,8 @@
 package com.jianlang.behavior.service.impl;
 
+import com.jianlang.behavior.kafa.BehaviorMessageSender;
 import com.jianlang.behavior.service.AppLikesBehaviorService;
+import com.jianlang.common.kafka.messages.behavior.UserLikesMessage;
 import com.jianlang.common.zookeeper.sequence.Sequences;
 import com.jianlang.model.behavior.dtos.LikesBehaviorDto;
 import com.jianlang.model.behavior.pojos.ApBehaviorEntry;
@@ -25,6 +27,10 @@ public class AppLikesBehaviorServiceImpl implements AppLikesBehaviorService {
     private ApLikesBehaviorMapper apLikesBehaviorMapper;
     @Autowired
     private Sequences sequences;
+    @Autowired
+    private BehaviorMessageSender sender;
+
+
     @Override
     public ResponseResult saveLikesBehavior(LikesBehaviorDto dto) {
         //get user info and device id
@@ -53,6 +59,13 @@ public class AppLikesBehaviorServiceImpl implements AppLikesBehaviorService {
         apLikesBehavior.setBurst("");
 
         int code = apLikesBehaviorMapper.insert(apLikesBehavior);
+        if (code == 1){
+            if (apLikesBehavior.getOperation() == ApLikesBehavior.Operation.LIKE.getCode()){
+                sender.sendMessagePlus(new UserLikesMessage(apLikesBehavior), userId, true);
+            } else if (apLikesBehavior.getOperation() == ApLikesBehavior.Operation.CANCEL.getCode()){
+                sender.sendMessageReduce(new UserLikesMessage(apLikesBehavior), userId, true);
+            }
+        }
         return ResponseResult.okResult(code);
     }
 }

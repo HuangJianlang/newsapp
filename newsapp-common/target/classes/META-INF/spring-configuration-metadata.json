@@ -1,6 +1,26 @@
 {
   "groups": [
     {
+      "name": "kafka",
+      "type": "com.jianlang.common.kafkastream.KafkaStreamConfig",
+      "sourceType": "com.jianlang.common.kafkastream.KafkaStreamConfig"
+    },
+    {
+      "name": "kafka",
+      "type": "com.jianlang.common.kafka.KafkaConsumerConfig",
+      "sourceType": "com.jianlang.common.kafka.KafkaConsumerConfig"
+    },
+    {
+      "name": "kafka",
+      "type": "com.jianlang.common.kafka.KafkaProducerConfig",
+      "sourceType": "com.jianlang.common.kafka.KafkaProducerConfig"
+    },
+    {
+      "name": "kafka.topic",
+      "type": "com.jianlang.common.kafka.KafkaTopicConfig",
+      "sourceType": "com.jianlang.common.kafka.KafkaTopicConfig"
+    },
+    {
       "name": "mysql.core",
       "type": "com.jianlang.common.mysql.core.MysqlCoreConfig",
       "sourceType": "com.jianlang.common.mysql.core.MysqlCoreConfig"
@@ -32,6 +52,51 @@
     }
   ],
   "properties": [
+    {
+      "name": "kafka.group",
+      "type": "java.lang.String",
+      "sourceType": "com.jianlang.common.kafkastream.KafkaStreamConfig"
+    },
+    {
+      "name": "kafka.group",
+      "type": "java.lang.String",
+      "sourceType": "com.jianlang.common.kafka.KafkaConsumerConfig"
+    },
+    {
+      "name": "kafka.hosts",
+      "type": "java.lang.String",
+      "sourceType": "com.jianlang.common.kafkastream.KafkaStreamConfig"
+    },
+    {
+      "name": "kafka.hosts",
+      "type": "java.lang.String",
+      "sourceType": "com.jianlang.common.kafka.KafkaConsumerConfig"
+    },
+    {
+      "name": "kafka.hosts",
+      "type": "java.lang.String",
+      "sourceType": "com.jianlang.common.kafka.KafkaProducerConfig"
+    },
+    {
+      "name": "kafka.kafka-topic-config",
+      "type": "com.jianlang.common.kafka.KafkaTopicConfig",
+      "sourceType": "com.jianlang.common.kafkastream.KafkaStreamConfig"
+    },
+    {
+      "name": "kafka.producer-listener",
+      "type": "org.springframework.kafka.support.ProducerListener<java.lang.String,java.lang.String>",
+      "sourceType": "com.jianlang.common.kafka.KafkaProducerConfig"
+    },
+    {
+      "name": "kafka.topic.article-incr-handle",
+      "type": "java.lang.String",
+      "sourceType": "com.jianlang.common.kafka.KafkaTopicConfig"
+    },
+    {
+      "name": "kafka.topic.article-update-bus",
+      "type": "java.lang.String",
+      "sourceType": "com.jianlang.common.kafka.KafkaTopicConfig"
+    },
     {
       "name": "mysql.core.aliases-package",
       "type": "java.lang.String",
