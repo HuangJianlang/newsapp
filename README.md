@@ -30,4 +30,10 @@ Backend is deployed in 2 machines to form a distributed system.
 * Design Behavior Module to record behaviors of user(the duration of reading a passage, the reaction to it(like, dislike or comment))
 * Simple Login Module
 
+## Developing Features
+
+* Register User
+* Loading Media and discussion
+* User Profile ...
+
 ## Snapshots
