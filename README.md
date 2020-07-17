@@ -20,7 +20,7 @@ Tech stack:
 
 ## Deployment
 Frontend is deployed using Nginx.
-Backend is deployed in 2 machines to form a distributed system.(This app is developed in maven multi-modules. It can be deployed in a cluster.)
+Backend is deployed in 2 machines to form a distributed system.
 
 ## Main Functionality
 
@@ -30,4 +30,4 @@ Backend is deployed in 2 machines to form a distributed system.(This app is deve
 * Design Behavior Module to record behaviors of user(the duration of reading a passage, the reaction to it(like, dislike or comment))
 * Simple Login Module
 
-## Sample
+## Snapshots
