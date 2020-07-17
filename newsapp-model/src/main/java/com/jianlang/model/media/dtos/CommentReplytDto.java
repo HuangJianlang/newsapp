@@ -1,0 +1,13 @@
+package com.jianlang.model.media.dtos;
+
+import com.jianlang.model.annotation.IdEncrypt;
+import lombok.Data;
+
+@Data
+public class CommentReplytDto {
+
+    @IdEncrypt
+    private Integer commentId;
+    private String content;
+
+}

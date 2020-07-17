@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/newsapp.iml" filepath="$PROJECT_DIR$/newsapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newsapp-apis/newsapp-apis.iml" filepath="$PROJECT_DIR$/newsapp-apis/newsapp-apis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newsapp-article/newsapp-article.iml" filepath="$PROJECT_DIR$/newsapp-article/newsapp-article.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newsapp-behavior/newsapp-behavior.iml" filepath="$PROJECT_DIR$/newsapp-behavior/newsapp-behavior.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newsapp-common/newsapp-common.iml" filepath="$PROJECT_DIR$/newsapp-common/newsapp-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newsapp-crawler/newsapp-crawler.iml" filepath="$PROJECT_DIR$/newsapp-crawler/newsapp-crawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newsapp-login/newsapp-login.iml" filepath="$PROJECT_DIR$/newsapp-login/newsapp-login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newsapp-model/newsapp-model.iml" filepath="$PROJECT_DIR$/newsapp-model/newsapp-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newsapp-user/newsapp-user.iml" filepath="$PROJECT_DIR$/newsapp-user/newsapp-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newsapp-utils/newsapp-utils.iml" filepath="$PROJECT_DIR$/newsapp-utils/newsapp-utils.iml" />
+    </modules>
+  </component>
+</project>
