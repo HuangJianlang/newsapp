@@ -50,7 +50,7 @@ Backend is deployed in 2 machines to form a distributed system.
 
 ![](https://i.ibb.co/PzxkwLw/IMG-1567.png)
 
-* reading page
+* reading page (Gif)
 
 <a href="https://ibb.co/t3yMzLt"><img src="https://i.ibb.co/TrzB1WS/RPReplay-Final1595193137.gif" alt="RPReplay-Final1595193137" border="0"></a>
 
