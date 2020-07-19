@@ -52,7 +52,7 @@ Backend is deployed in 2 machines to form a distributed system.
 
 * reading page
 
-![image](https://i.ibb.co/TrzB1WS/RPReplay-Final1595193137.gif)
+<a href="https://ibb.co/t3yMzLt"><img src="https://i.ibb.co/TrzB1WS/RPReplay-Final1595193137.gif" alt="RPReplay-Final1595193137" border="0"></a>
 
 * asscociate word searching
 
