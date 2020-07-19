@@ -43,4 +43,18 @@ Backend is deployed in 2 machines to form a distributed system.
 ## Snapshots
 
 * Login in page:
-![https://i.ibb.co/zn5r09c/IMG-1566.png]
+
+![](https://i.ibb.co/zn5r09c/IMG-1566.png)
+
+* home page
+
+![](https://i.ibb.co/PzxkwLw/IMG-1567.png)
+
+* reading page
+
+![](https://i.ibb.co/TrzB1WS/RPReplay-Final1595193137.gif)
+
+* asscociate word searching
+
+![](https://i.ibb.co/HV6rDCx/IMG-1569.png)
+
