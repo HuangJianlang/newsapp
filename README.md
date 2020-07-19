@@ -2,6 +2,10 @@
 This is a  newsapp based on Springboot and Vue.
 This repository is backend modules.
 
+This app is deployed at http://trojanvps.site:3000
+
+Feel free to try it!
+
 Tech stack:
 
 ## Front-end:
